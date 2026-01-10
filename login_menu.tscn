@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://dn0lavgsu4y3s"]
+
+[ext_resource type="Texture2D" uid="uid://dmpuddkqjjrwm" path="res://พื้นหลังหน้าแรก.png" id="1_e8nxn"]
+[ext_resource type="Texture2D" uid="uid://cbfqohwc4vtol" path="res://logo1.png" id="2_wjs6x"]
+
+[node name="LoginMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 32.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_e8nxn")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="logo" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 320.0
+offset_top = -40.0
+offset_right = 830.0
+offset_bottom = 287.0
+texture = ExtResource("2_wjs6x")
+expand_mode = 1
