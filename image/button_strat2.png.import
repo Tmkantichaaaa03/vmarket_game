@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dro4nv81qvqoq"
-path="res://.godot/imported/button_strat2.png-80bfa7ac371df187e1338942d7e3e15d.ctex"
+path="res://.godot/imported/button_strat2.png-13dbc917fff9483a5b8258d5075a0c6b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://vmarket_game/image/button_strat2.png"
-dest_files=["res://.godot/imported/button_strat2.png-80bfa7ac371df187e1338942d7e3e15d.ctex"]
+source_file="res://image/button_strat2.png"
+dest_files=["res://.godot/imported/button_strat2.png-13dbc917fff9483a5b8258d5075a0c6b.ctex"]
 
 [params]
 

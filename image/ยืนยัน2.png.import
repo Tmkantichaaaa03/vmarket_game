@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xdirnjdopqhw"
-path="res://.godot/imported/ยืนยัน2.png-c673f39e6b1a4dfcb2e1fc15ea9c0bbe.ctex"
+path="res://.godot/imported/ยืนยัน2.png-c8048dc25b54aa48bde2fabab9128700.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://vmarket_game/image/ยืนยัน2.png"
-dest_files=["res://.godot/imported/ยืนยัน2.png-c673f39e6b1a4dfcb2e1fc15ea9c0bbe.ctex"]
+source_file="res://image/ยืนยัน2.png"
+dest_files=["res://.godot/imported/ยืนยัน2.png-c8048dc25b54aa48bde2fabab9128700.ctex"]
 
 [params]
 

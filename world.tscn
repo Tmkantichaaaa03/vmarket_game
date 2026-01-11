@@ -1,6 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://cbnw7uhad0muj"]
-
-[ext_resource type="Texture2D" uid="uid://cwhs2n8rww8w0" path="res://vmarket_game/image/พื้นหลังหน้าแรกมืด.png" id="1_n4ucm"]
+[gd_scene format=3 uid="uid://cbnw7uhad0muj"]
 
 [node name="World" type="Control"]
 layout_mode = 3
@@ -9,9 +7,3 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("1_n4ucm")
