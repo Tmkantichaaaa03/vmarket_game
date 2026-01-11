@@ -25,29 +25,28 @@ grow_vertical = 2
 expand_mode = 1
 
 [node name="พื้นหลังหน้าแรก" type="Sprite2D" parent="TextureRect"]
-position = Vector2(591.25006, 325.00003)
-scale = Vector2(0.7692058, 0.63281244)
+position = Vector2(979.25, 540.5)
+scale = Vector2(1.2744141, 1.0537108)
 texture = ExtResource("1_cmxxc")
 
 [node name="logo" type="TextureRect" parent="TextureRect/พื้นหลังหน้าแรก"]
-offset_left = -549.8815
-offset_top = -624.1975
-offset_right = 507.40857
-offset_bottom = 127.26099
+offset_left = -545.54486
+offset_top = -619.2401
+offset_right = 511.74518
+offset_bottom = 132.21838
 size_flags_horizontal = 4
 size_flags_vertical = 4
 texture = ExtResource("2_30iir")
 expand_mode = 1
 
-[node name="TextureButton" type="TextureButton" parent="."]
-layout_mode = 0
-offset_left = 287.0
-offset_top = 255.0
-offset_right = 872.0
-offset_bottom = 578.0
+[node name="TextureButton" type="TextureButton" parent="TextureRect/พื้นหลังหน้าแรก"]
+offset_left = -374.48584
+offset_top = -116.2558
+offset_right = 345.06055
+offset_bottom = 386.72845
 texture_normal = ExtResource("3_uhgno")
 texture_hover = ExtResource("4_ucjb5")
 ignore_texture_size = true
 stretch_mode = 0
 
-[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureRect/พื้นหลังหน้าแรก/TextureButton" to="." method="_on_texture_button_pressed"]

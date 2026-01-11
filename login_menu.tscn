@@ -39,7 +39,7 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 31.0
+offset_right = 40.0
 offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -48,30 +48,30 @@ expand_mode = 1
 
 [node name="logo" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 336.0
+offset_left = 664.0
 offset_top = -72.0
-offset_right = 846.0
-offset_bottom = 255.0
+offset_right = 1376.0
+offset_bottom = 352.0
 texture = ExtResource("2_wjs6x")
 expand_mode = 1
 
 [node name="username" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 409.0
-offset_top = 248.0
-offset_right = 769.0
-offset_bottom = 304.0
+offset_left = 729.0
+offset_top = 400.0
+offset_right = 1297.0
+offset_bottom = 480.0
 texture = ExtResource("4_mbryh")
 expand_mode = 2
 
 [node name="LineEdit" type="LineEdit" parent="username"]
 layout_mode = 0
-offset_left = 40.0
-offset_top = -8.0
-offset_right = 320.0
-offset_bottom = 48.0
+offset_left = 63.0
+offset_top = 4.0
+offset_right = 503.0
+offset_bottom = 60.0
 theme_override_fonts/font = ExtResource("3_01ie6")
-theme_override_font_sizes/font_size = 25
+theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxEmpty_01ie6")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_4kcbn")
 placeholder_text = "ชื่อผู้ใช้"
@@ -79,20 +79,25 @@ alignment = 1
 
 [node name="loginlabel" type="Label" parent="."]
 layout_mode = 0
-offset_left = 485.0
-offset_top = 144.0
-offset_right = 709.0
-offset_bottom = 225.0
+offset_left = 886.0
+offset_top = 248.0
+offset_right = 1154.0
+offset_bottom = 345.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.3764706)
+theme_override_constants/paragraph_spacing = 0
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 20
 theme_override_fonts/font = ExtResource("3_01ie6")
-theme_override_font_sizes/font_size = 53
+theme_override_font_sizes/font_size = 67
 text = "เข้าสู่ระบบ"
 
 [node name="AcceptBotton" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 448.0
-offset_top = 456.0
-offset_right = 736.0
-offset_bottom = 520.0
+offset_left = 856.0
+offset_top = 728.0
+offset_right = 1176.0
+offset_bottom = 800.0
 texture_normal = ExtResource("5_2ndkr")
 texture_hover = ExtResource("6_dy1s0")
 ignore_texture_size = true
@@ -100,20 +105,20 @@ stretch_mode = 0
 
 [node name="password" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 409.0
-offset_top = 344.0
-offset_right = 769.0
-offset_bottom = 400.0
+offset_left = 728.0
+offset_top = 552.0
+offset_right = 1296.0
+offset_bottom = 624.0
 texture = ExtResource("4_mbryh")
 expand_mode = 2
 
 [node name="LineEdit2" type="LineEdit" parent="password"]
 layout_mode = 0
-offset_left = 38.0
-offset_right = 326.0
-offset_bottom = 48.0
+offset_left = 67.0
+offset_right = 507.0
+offset_bottom = 55.0
 theme_override_fonts/font = ExtResource("3_01ie6")
-theme_override_font_sizes/font_size = 25
+theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxEmpty_2ndkr")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_dy1s0")
 placeholder_text = "รหัสผ่าน"
@@ -124,14 +129,14 @@ secret = true
 
 [node name="RegisterButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 485.0
-offset_top = 576.0
-offset_right = 708.0
-offset_bottom = 614.0
+offset_left = 904.0
+offset_top = 832.0
+offset_right = 1140.0
+offset_bottom = 870.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_01ie6")
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 22
 theme_override_styles/normal = SubResource("StyleBoxEmpty_l8ugl")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_7eett")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_m7n2y")
