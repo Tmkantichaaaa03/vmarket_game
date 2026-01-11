@@ -1,7 +1,28 @@
-[gd_scene load_steps=3 format=3 uid="uid://dn0lavgsu4y3s"]
+[gd_scene load_steps=16 format=3 uid="uid://dn0lavgsu4y3s"]
 
-[ext_resource type="Texture2D" uid="uid://dmpuddkqjjrwm" path="res://พื้นหลังหน้าแรก.png" id="1_e8nxn"]
-[ext_resource type="Texture2D" uid="uid://cbfqohwc4vtol" path="res://logo1.png" id="2_wjs6x"]
+[ext_resource type="Script" uid="uid://bbgkbefts7j2p" path="res://vmarket_game/login_menu.gd" id="1_dy1s0"]
+[ext_resource type="Texture2D" uid="uid://cwhs2n8rww8w0" path="res://vmarket_game/image/พื้นหลังหน้าแรกมืด.png" id="2_dy1s0"]
+[ext_resource type="Texture2D" uid="uid://cbfqohwc4vtol" path="res://vmarket_game/image/logo1.png" id="2_wjs6x"]
+[ext_resource type="FontFile" uid="uid://iil8kvo82vev" path="res://PSLCD3310.ttf" id="3_01ie6"]
+[ext_resource type="Texture2D" uid="uid://dhpch23cwo5ou" path="res://vmarket_game/image/กรอบข้อความ.png" id="4_mbryh"]
+[ext_resource type="Texture2D" uid="uid://duybccx1iv1t8" path="res://vmarket_game/image/ยืนยัน.png" id="5_2ndkr"]
+[ext_resource type="Texture2D" uid="uid://xdirnjdopqhw" path="res://vmarket_game/image/ยืนยัน2.png" id="6_dy1s0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_01ie6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4kcbn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2ndkr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dy1s0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l8ugl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7eett"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m7n2y"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qd2sl"]
 
 [node name="LoginMenu" type="Control"]
 layout_mode = 3
@@ -10,26 +31,113 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_dy1s0")
 metadata/_edit_lock_ = true
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 32.0
-offset_bottom = -1.0
+offset_right = 31.0
+offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_e8nxn")
+texture = ExtResource("2_dy1s0")
 expand_mode = 1
-metadata/_edit_lock_ = true
 
 [node name="logo" type="TextureRect" parent="."]
 layout_mode = 0
-offset_left = 320.0
-offset_top = -40.0
-offset_right = 830.0
-offset_bottom = 287.0
+offset_left = 336.0
+offset_top = -72.0
+offset_right = 846.0
+offset_bottom = 255.0
 texture = ExtResource("2_wjs6x")
 expand_mode = 1
+
+[node name="username" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 409.0
+offset_top = 248.0
+offset_right = 769.0
+offset_bottom = 304.0
+texture = ExtResource("4_mbryh")
+expand_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="username"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = -8.0
+offset_right = 320.0
+offset_bottom = 48.0
+theme_override_fonts/font = ExtResource("3_01ie6")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_01ie6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4kcbn")
+placeholder_text = "ชื่อผู้ใช้"
+alignment = 1
+
+[node name="loginlabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 485.0
+offset_top = 144.0
+offset_right = 709.0
+offset_bottom = 225.0
+theme_override_fonts/font = ExtResource("3_01ie6")
+theme_override_font_sizes/font_size = 53
+text = "เข้าสู่ระบบ"
+
+[node name="AcceptBotton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 456.0
+offset_right = 736.0
+offset_bottom = 520.0
+texture_normal = ExtResource("5_2ndkr")
+texture_hover = ExtResource("6_dy1s0")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="password" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 409.0
+offset_top = 344.0
+offset_right = 769.0
+offset_bottom = 400.0
+texture = ExtResource("4_mbryh")
+expand_mode = 2
+
+[node name="LineEdit2" type="LineEdit" parent="password"]
+layout_mode = 0
+offset_left = 38.0
+offset_right = 326.0
+offset_bottom = 48.0
+theme_override_fonts/font = ExtResource("3_01ie6")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxEmpty_2ndkr")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dy1s0")
+placeholder_text = "รหัสผ่าน"
+alignment = 1
+secret = true
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[node name="RegisterButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 485.0
+offset_top = 576.0
+offset_right = 708.0
+offset_bottom = 614.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_01ie6")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_l8ugl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_7eett")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_m7n2y")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qd2sl")
+text = "ยังไม่มีบัญชี ?  สมัครสมาชิก"
+
+[connection signal="pressed" from="AcceptBotton" to="." method="_on_accept_botton_pressed"]
+[connection signal="request_completed" from="HTTPRequest" to="." method="_on_http_request_request_completed"]
+[connection signal="pressed" from="RegisterButton" to="." method="_on_register_button_pressed"]

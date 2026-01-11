@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://b2jsr8bkpijd8"]
+[gd_scene load_steps=6 format=3 uid="uid://b2jsr8bkpijd8"]
 
-[ext_resource type="Texture2D" uid="uid://dmpuddkqjjrwm" path="res://พื้นหลังหน้าแรก.png" id="1_cmxxc"]
-[ext_resource type="Texture2D" uid="uid://cbfqohwc4vtol" path="res://logo1.png" id="2_30iir"]
-[ext_resource type="Texture2D" uid="uid://wgu0j0iydld5" path="res://button_strat1.png" id="3_uhgno"]
-[ext_resource type="Texture2D" uid="uid://dro4nv81qvqoq" path="res://button_strat2.png" id="4_ucjb5"]
+[ext_resource type="Texture2D" uid="uid://dmpuddkqjjrwm" path="res://vmarket_game/image/พื้นหลังหน้าแรก.png" id="1_cmxxc"]
+[ext_resource type="Script" uid="uid://c8a4eu6mohlce" path="res://vmarket_game/main_menu.gd" id="1_ucjb5"]
+[ext_resource type="Texture2D" uid="uid://cbfqohwc4vtol" path="res://vmarket_game/image/logo1.png" id="2_30iir"]
+[ext_resource type="Texture2D" uid="uid://wgu0j0iydld5" path="res://vmarket_game/image/button_strat1.png" id="3_uhgno"]
+[ext_resource type="Texture2D" uid="uid://dro4nv81qvqoq" path="res://vmarket_game/image/button_strat2.png" id="4_ucjb5"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -12,6 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ucjb5")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -47,3 +49,5 @@ texture_normal = ExtResource("3_uhgno")
 texture_hover = ExtResource("4_ucjb5")
 ignore_texture_size = true
 stretch_mode = 0
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
