@@ -1,4 +1,7 @@
-[gd_scene format=3 uid="uid://cbnw7uhad0muj"]
+[gd_scene load_steps=3 format=3 uid="uid://cbnw7uhad0muj"]
+
+[ext_resource type="Texture2D" uid="uid://wgu0j0iydld5" path="res://image/button_strat1.png" id="1_fj7yv"]
+[ext_resource type="Texture2D" uid="uid://dro4nv81qvqoq" path="res://image/button_strat2.png" id="2_tlwt5"]
 
 [node name="World" type="Control"]
 layout_mode = 3
@@ -7,3 +10,11 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="ButtonStrat1" type="Sprite2D" parent="."]
+position = Vector2(1079, 481)
+texture = ExtResource("1_fj7yv")
+
+[node name="ButtonStrat2" type="Sprite2D" parent="."]
+position = Vector2(1947, 622)
+texture = ExtResource("2_tlwt5")
