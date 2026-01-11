@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhpch23cwo5ou"
-path="res://.godot/imported/กรอบข้อความ.png-60864cc735936aee0636dcdc47113c4d.ctex"
+uid="uid://dro4nv81qvqoq"
+path="res://.godot/imported/button_strat2.png-80bfa7ac371df187e1338942d7e3e15d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://image/กรอบข้อความ.png"
-dest_files=["res://.godot/imported/กรอบข้อความ.png-60864cc735936aee0636dcdc47113c4d.ctex"]
+source_file="res://vmarket_game/image/button_strat2.png"
+dest_files=["res://.godot/imported/button_strat2.png-80bfa7ac371df187e1338942d7e3e15d.ctex"]
 
 [params]
 

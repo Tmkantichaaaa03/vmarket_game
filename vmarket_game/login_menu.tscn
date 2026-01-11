@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://bbgkbefts7j2p" path="res://vmarket_game/login_menu.gd" id="1_dy1s0"]
 [ext_resource type="Texture2D" uid="uid://cwhs2n8rww8w0" path="res://vmarket_game/image/พื้นหลังหน้าแรกมืด.png" id="2_dy1s0"]
 [ext_resource type="Texture2D" uid="uid://cbfqohwc4vtol" path="res://vmarket_game/image/logo1.png" id="2_wjs6x"]
-[ext_resource type="FontFile" uid="uid://iil8kvo82vev" path="res://PSLCD3310.ttf" id="3_01ie6"]
+[ext_resource type="FontFile" uid="uid://iil8kvo82vev" path="res://vmarket_game/PSLCD3310.ttf" id="3_01ie6"]
 [ext_resource type="Texture2D" uid="uid://dhpch23cwo5ou" path="res://vmarket_game/image/กรอบข้อความ.png" id="4_mbryh"]
 [ext_resource type="Texture2D" uid="uid://duybccx1iv1t8" path="res://vmarket_game/image/ยืนยัน.png" id="5_2ndkr"]
 [ext_resource type="Texture2D" uid="uid://xdirnjdopqhw" path="res://vmarket_game/image/ยืนยัน2.png" id="6_dy1s0"]

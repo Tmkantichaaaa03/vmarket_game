@@ -13,7 +13,7 @@ config_version=5
 config/name="vmarket_game"
 run/main_scene="uid://b2jsr8bkpijd8"
 config/features=PackedStringArray("4.5", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://vmarket_game/icon.svg"
 
 [display]
 

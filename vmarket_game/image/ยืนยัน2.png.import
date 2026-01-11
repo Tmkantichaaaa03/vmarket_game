@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwhs2n8rww8w0"
-path="res://.godot/imported/พื้นหลังหน้าแรกมืด.png-d9d6fa49b61b5658e5df5e82f5d6aa26.ctex"
+uid="uid://xdirnjdopqhw"
+path="res://.godot/imported/ยืนยัน2.png-c673f39e6b1a4dfcb2e1fc15ea9c0bbe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://image/พื้นหลังหน้าแรกมืด.png"
-dest_files=["res://.godot/imported/พื้นหลังหน้าแรกมืด.png-d9d6fa49b61b5658e5df5e82f5d6aa26.ctex"]
+source_file="res://vmarket_game/image/ยืนยัน2.png"
+dest_files=["res://.godot/imported/ยืนยัน2.png-c673f39e6b1a4dfcb2e1fc15ea9c0bbe.ctex"]
 
 [params]
 

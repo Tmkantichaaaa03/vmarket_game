@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xdirnjdopqhw"
-path="res://.godot/imported/ยืนยัน2.png-c8048dc25b54aa48bde2fabab9128700.ctex"
+uid="uid://wfxt15yub00m"
+path="res://.godot/imported/icon.svg-6d37f980e463084c7b608f7e4dbc568e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://image/ยืนยัน2.png"
-dest_files=["res://.godot/imported/ยืนยัน2.png-c8048dc25b54aa48bde2fabab9128700.ctex"]
+source_file="res://vmarket_game/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-6d37f980e463084c7b608f7e4dbc568e.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

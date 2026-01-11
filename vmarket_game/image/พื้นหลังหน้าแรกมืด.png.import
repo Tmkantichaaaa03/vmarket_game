@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dro4nv81qvqoq"
-path="res://.godot/imported/button_strat2.png-13dbc917fff9483a5b8258d5075a0c6b.ctex"
+uid="uid://cwhs2n8rww8w0"
+path="res://.godot/imported/พื้นหลังหน้าแรกมืด.png-b5d07cb3dbc9968197c8c5a4d43557a3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://image/button_strat2.png"
-dest_files=["res://.godot/imported/button_strat2.png-13dbc917fff9483a5b8258d5075a0c6b.ctex"]
+source_file="res://vmarket_game/image/พื้นหลังหน้าแรกมืด.png"
+dest_files=["res://.godot/imported/พื้นหลังหน้าแรกมืด.png-b5d07cb3dbc9968197c8c5a4d43557a3.ctex"]
 
 [params]
 

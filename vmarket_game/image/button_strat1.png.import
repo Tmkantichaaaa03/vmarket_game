@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://duybccx1iv1t8"
-path="res://.godot/imported/ยืนยัน.png-bdbcbbeb525294941e51ca6d49f4ac30.ctex"
+uid="uid://wgu0j0iydld5"
+path="res://.godot/imported/button_strat1.png-0ca42386adb4a867233691a840adc34c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://image/ยืนยัน.png"
-dest_files=["res://.godot/imported/ยืนยัน.png-bdbcbbeb525294941e51ca6d49f4ac30.ctex"]
+source_file="res://vmarket_game/image/button_strat1.png"
+dest_files=["res://.godot/imported/button_strat1.png-0ca42386adb4a867233691a840adc34c.ctex"]
 
 [params]
 

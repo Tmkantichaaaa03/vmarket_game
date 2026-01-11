@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://iil8kvo82vev"
-path="res://.godot/imported/PSLCD3310.ttf-2862f3c448ec74b0d33ce3271c1d17d7.fontdata"
+path="res://.godot/imported/PSLCD3310.ttf-0d0fd4921de6c0fc3018183f5329e124.fontdata"
 
 [deps]
 
-source_file="res://PSLCD3310.ttf"
-dest_files=["res://.godot/imported/PSLCD3310.ttf-2862f3c448ec74b0d33ce3271c1d17d7.fontdata"]
+source_file="res://vmarket_game/PSLCD3310.ttf"
+dest_files=["res://.godot/imported/PSLCD3310.ttf-0d0fd4921de6c0fc3018183f5329e124.fontdata"]
 
 [params]
 
