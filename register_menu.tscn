@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://b6v364t7tl4rs"]
+[gd_scene load_steps=2 format=3 uid="uid://b6v364t7tl4rs"]
+
+[ext_resource type="Texture2D" uid="uid://cwhs2n8rww8w0" path="res://vmarket_game/image/พื้นหลังหน้าแรกมืด.png" id="1_eemat"]
 
 [node name="RegisterMenu" type="Control"]
 layout_mode = 3
@@ -7,3 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="พื้นหลังหน้าแรกมืด" type="Sprite2D" parent="."]
+position = Vector2(792, 512)
+texture = ExtResource("1_eemat")
