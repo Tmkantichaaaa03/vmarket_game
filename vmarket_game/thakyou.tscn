@@ -1,0 +1,85 @@
+[gd_scene load_steps=6 format=3 uid="uid://c7pxlp7mtfjah"]
+
+[ext_resource type="Texture2D" uid="uid://cwhs2n8rww8w0" path="res://vmarket_game/image/พื้นหลังหน้าแรกมืด.png" id="1_gmtl3"]
+[ext_resource type="Texture2D" uid="uid://chb1i430on2fb" path="res://vmarket_game/image/Pokecut_1768163041145.png" id="2_m024s"]
+[ext_resource type="FontFile" uid="uid://iil8kvo82vev" path="res://vmarket_game/PSLCD3310.ttf" id="3_i5u3d"]
+[ext_resource type="Texture2D" uid="uid://y2lro4rpuxn1" path="res://vmarket_game/image/ปุ่มน้ำตาล2.png" id="4_e0gd8"]
+[ext_resource type="Texture2D" uid="uid://b1ukgbn2ggtd1" path="res://vmarket_game/image/ปุ่มน้ำตาล.png" id="5_skwwp"]
+
+[node name="thakyou" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="พื้นหลังหน้าแรกมืด" type="Sprite2D" parent="."]
+position = Vector2(957.75006, 549.25006)
+scale = Vector2(1.258138, 1.0444337)
+texture = ExtResource("1_gmtl3")
+
+[node name="Pokecut1768163041145" type="Sprite2D" parent="."]
+position = Vector2(989.00006, 509)
+scale = Vector2(1.3131794, 1.4417615)
+texture = ExtResource("2_m024s")
+
+[node name="Label" type="Label" parent="Pokecut1768163041145"]
+offset_left = -485.89172
+offset_top = -237.34006
+offset_right = 572.61633
+offset_bottom = 287.65994
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_i5u3d")
+theme_override_font_sizes/font_size = 20
+text = "ขอบคุณสำหรับการสั่งซื้อของคุณ!
+
+คำสั่งซื้อของคุณได้รับการยืนยันเรียบร้อยแล้ว และขณะนี้อยู่ระหว่างการดำเนินการ
+
+จัดเตรียมสินค้า ทีมงานของเรากำลังดำเนินการอย่างดีที่สุดเพื่อให้สินค้าพร้อมสำหรับ
+
+การจัดส่งโดยเร็วที่สุด
+
+หากมีข้อสงสัยหรือต้องการความช่วยเหลือเพิ่มเติม กรุณาติดต่อฝ่ายบริการลูกค้าผ่าน 
+
+UNITRADE
+
+ขอขอบคุณที่ไว้วางใจเรา และโปรดรอรับสินค้าของคุณเร็ว ๆ นี้!
+
+ทีมงาน UNITRADE
+"
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="Pokecut1768163041145"]
+offset_left = -175.38564
+offset_top = -294.373
+offset_right = 95.614365
+offset_bottom = -239.19296
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_i5u3d")
+theme_override_font_sizes/font_size = 30
+text = "เรียนลูกค้าผู้มีอุปการคุณ"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 781.0
+offset_top = 847.0
+offset_right = 1132.0
+offset_bottom = 944.0
+texture_normal = ExtResource("4_e0gd8")
+texture_hover = ExtResource("5_skwwp")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="TextureButton"]
+layout_mode = 0
+offset_left = -16.0
+offset_top = 16.0
+offset_right = 359.0
+offset_bottom = 74.0
+theme_override_fonts/font = ExtResource("3_i5u3d")
+theme_override_font_sizes/font_size = 40
+text = "กลับหน้าแรก"
+horizontal_alignment = 1
+vertical_alignment = 1

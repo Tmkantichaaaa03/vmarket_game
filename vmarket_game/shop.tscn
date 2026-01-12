@@ -1,0 +1,63 @@
+[gd_scene load_steps=6 format=3 uid="uid://c20ucc4bjaw48"]
+
+[ext_resource type="Texture2D" uid="uid://ls3nwnq35im4" path="res://vmarket_game/image/สีดำ.jpg" id="1_y3wvr"]
+[ext_resource type="Texture2D" uid="uid://chb1i430on2fb" path="res://vmarket_game/image/Pokecut_1768163041145.png" id="2_1ushs"]
+[ext_resource type="FontFile" uid="uid://iil8kvo82vev" path="res://vmarket_game/PSLCD3310.ttf" id="3_2238l"]
+[ext_resource type="Texture2D" uid="uid://b8tcsqr00ahc1" path="res://vmarket_game/image/ลูกศรย้อน.png" id="4_6y3e6"]
+[ext_resource type="Texture2D" uid="uid://dnxrk5leogtfi" path="res://vmarket_game/image/กล่องใส่รูป.png" id="5_jn4x2"]
+
+[node name="shop" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -18.0
+offset_top = -16.0
+offset_right = -18.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="สีดำ" type="Sprite2D" parent="."]
+position = Vector2(960.75, 538.25)
+scale = Vector2(6.417492, 2.6654322)
+texture = ExtResource("1_y3wvr")
+metadata/_edit_lock_ = true
+
+[node name="Pokecut1768163041145" type="Sprite2D" parent="."]
+position = Vector2(968.99994, 509.00006)
+scale = Vector2(1.472147, 1.4644885)
+texture = ExtResource("2_1ushs")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 783.0
+offset_top = 95.0
+offset_right = 1150.0
+offset_bottom = 250.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_2238l")
+theme_override_font_sizes/font_size = 70
+text = "ตะกร้าสินค้า"
+
+[node name="ลูกศรย้อน" type="Sprite2D" parent="."]
+position = Vector2(274, 122)
+scale = Vector2(0.28982112, 0.15310906)
+texture = ExtResource("4_6y3e6")
+
+[node name="กล่องใส่รูป" type="Sprite2D" parent="."]
+position = Vector2(631.49994, 406.50003)
+scale = Vector2(1.3713797, 0.81601363)
+texture = ExtResource("5_jn4x2")
+
+[node name="กล่องใส่รูป2" type="Sprite2D" parent="."]
+position = Vector2(636.5, 755)
+scale = Vector2(1.3918228, 0.7597956)
+texture = ExtResource("5_jn4x2")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1120.0
+offset_top = 219.0
+offset_right = 1592.0
+offset_bottom = 372.0
