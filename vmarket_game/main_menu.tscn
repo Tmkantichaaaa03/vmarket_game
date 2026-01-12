@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://b2jsr8bkpijd8"]
+[gd_scene load_steps=6 format=3 uid="uid://vodpc2ol3msq"]
 
 [ext_resource type="Texture2D" uid="uid://dmpuddkqjjrwm" path="res://vmarket_game/image/พื้นหลังหน้าแรก.png" id="1_cmxxc"]
 [ext_resource type="Script" uid="uid://c8a4eu6mohlce" path="res://vmarket_game/main_menu.gd" id="1_ucjb5"]

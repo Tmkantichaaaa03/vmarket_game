@@ -1,7 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://0i6fjhxu0v03"]
+[gd_scene load_steps=12 format=3 uid="uid://cvxngy0jrgv7d"]
 
 [ext_resource type="Texture2D" uid="uid://doaipjr2mbu7x" path="res://vmarket_game/image/OIG1.Qlo.jpg" id="1_3p7ti"]
-[ext_resource type="Script" uid="uid://cgg22q8dycisa" path="res://vmarket_game/shop_scene.gd" id="1_4fx14"]
+[ext_resource type="Script" path="res://vmarket_game/shop_scene.gd" id="1_4fx14"]
 [ext_resource type="Texture2D" uid="uid://chb1i430on2fb" path="res://vmarket_game/image/Pokecut_1768163041145.png" id="2_4fx14"]
 [ext_resource type="Texture2D" uid="uid://c53nrwxbpqhdq" path="res://vmarket_game/image/Pokecut_1768167183825.png" id="3_8r0by"]
 [ext_resource type="Texture2D" uid="uid://baotrx1p03rsy" path="res://vmarket_game/image/กรอบ5.png" id="4_dfkra"]
@@ -79,9 +79,16 @@ position = Vector2(447, 610)
 scale = Vector2(0.4280173, 0.3283732)
 texture = ExtResource("9_c00qm")
 
+[node name="Label" type="Label" parent="กรอบข้อความ"]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 50
+text = "dfdsfd"
+
 [node name="กรอบ6" type="Sprite2D" parent="."]
-position = Vector2(1173.125, 192.00002)
-scale = Vector2(0.2154948, 0.3830935)
+position = Vector2(1200.125, 192.00002)
+scale = Vector2(0.24361978, 0.3830935)
 texture = ExtResource("4_dfkra")
 
 [node name="กรอบ7" type="Sprite2D" parent="."]
@@ -91,10 +98,10 @@ texture = ExtResource("4_dfkra")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_left = 998.0
-offset_top = 146.0
-offset_right = 1354.0
-offset_bottom = 230.0
+offset_left = 1026.0
+offset_top = 153.0
+offset_right = 1394.0
+offset_bottom = 241.0
 theme_override_colors/font_color = Color(0.008202022, 0.008202025, 0.008202025, 1)
 theme_override_fonts/font = ExtResource("7_0ix7p")
 theme_override_font_sizes/font_size = 50
@@ -102,14 +109,15 @@ text = "รายละเอียดสินค้า"
 
 [node name="Label2" type="Label" parent="."]
 layout_mode = 0
-offset_left = 985.0
-offset_top = 437.0
-offset_right = 1445.0
-offset_bottom = 543.0
+offset_left = 962.0
+offset_top = 427.0
+offset_right = 1422.0
+offset_bottom = 533.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("7_0ix7p")
 theme_override_font_sizes/font_size = 50
 text = "สินค้าทั้งหมด"
+horizontal_alignment = 1
 
 [node name="กล่องใส่รูป" type="Sprite2D" parent="."]
 position = Vector2(979, 643.00006)
