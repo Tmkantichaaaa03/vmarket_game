@@ -1,8 +1,8 @@
-[gd_scene load_steps=43 format=3 uid="uid://b75nl6tj4xgop"]
+[gd_scene load_steps=47 format=3 uid="uid://b75nl6tj4xgop"]
 
-[ext_resource type="Texture2D" uid="uid://dmpuddkqjjrwm" path="res://vmarket_game/image/พื้นหลังหน้าแรก.png" id="1_eemat"]
 [ext_resource type="Script" uid="uid://dgg1gxqknka7f" path="res://vmarket_game/register_menu.gd" id="1_exctt"]
 [ext_resource type="Texture2D" uid="uid://chb1i430on2fb" path="res://vmarket_game/image/Pokecut_1768163041145.png" id="2_pic4r"]
+[ext_resource type="Texture2D" uid="uid://dcbxp14oxueoj" path="res://vmarket_game/พื้นหลัง2.png" id="2_wmt3j"]
 [ext_resource type="Texture2D" uid="uid://baotrx1p03rsy" path="res://vmarket_game/image/กรอบ5.png" id="3_a04qv"]
 [ext_resource type="Texture2D" uid="uid://b1ukgbn2ggtd1" path="res://vmarket_game/image/ปุ่มน้ำตาล.png" id="4_lhqvn"]
 [ext_resource type="Texture2D" uid="uid://c53nrwxbpqhdq" path="res://vmarket_game/image/Pokecut_1768167183825.png" id="5_a1hc2"]
@@ -15,6 +15,8 @@
 [ext_resource type="Texture2D" uid="uid://y2lro4rpuxn1" path="res://vmarket_game/image/ปุ่มน้ำตาล2.png" id="13_w8xxf"]
 [ext_resource type="FontFile" uid="uid://iil8kvo82vev" path="res://vmarket_game/PSLCD3310.ttf" id="14_gtcp1"]
 [ext_resource type="Texture2D" uid="uid://dqq5jk4k24p4u" path="res://vmarket_game/image/Pokecut_1768167517223.png" id="15_ikcv6"]
+[ext_resource type="Texture2D" uid="uid://dg8i3ps1tsjvt" path="res://vmarket_game/ย้อน1.png" id="16_wmt3j"]
+[ext_resource type="Texture2D" uid="uid://bawqrqgqj71e" path="res://vmarket_game/ย้อน2.png" id="17_j7nty"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ikcv6"]
 atlas = ExtResource("8_cnrev")
@@ -211,6 +213,20 @@ animations = [{
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ikcv6"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ikcv6"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0.25, 0.25, 0.25, 1)
+corner_detail = 1
+
+[sub_resource type="Theme" id="Theme_s32jo"]
+AcceptDialog/constants/buttons_separation = 10
+AcceptDialog/font_sizes/title_font_size = 20
+AcceptDialog/fonts/title_font = ExtResource("14_gtcp1")
+AcceptDialog/styles/panel = SubResource("StyleBoxFlat_ikcv6")
+
 [node name="RegisterMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -221,11 +237,10 @@ grow_vertical = 2
 script = ExtResource("1_exctt")
 metadata/_edit_lock_ = true
 
-[node name="พื้นหลังหน้าแรก" type="Sprite2D" parent="."]
-position = Vector2(929, 613)
-scale = Vector2(1.3945313, 1.1777344)
-texture = ExtResource("1_eemat")
-metadata/_edit_lock_ = true
+[node name="พื้นหลัง2" type="Sprite2D" parent="."]
+position = Vector2(956.00006, 544)
+scale = Vector2(1.265625, 1.0625)
+texture = ExtResource("2_wmt3j")
 
 [node name="Pokecut1768163041145" type="Sprite2D" parent="."]
 position = Vector2(980, 510)
@@ -279,7 +294,7 @@ position = Vector2(496, 308.99997)
 scale = Vector2(13.484497, 10.1875)
 sprite_frames = SubResource("SpriteFrames_5o58g")
 animation = &"Amelia"
-frame_progress = 0.7972927
+frame_progress = 0.7976712
 
 [node name="right" type="TextureButton" parent="."]
 layout_mode = 0
@@ -555,3 +570,21 @@ theme_override_fonts/font = ExtResource("14_gtcp1")
 theme_override_font_sizes/font_size = 39
 text = "ตัวละคร"
 horizontal_alignment = 1
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[node name="AlertDialog" type="AcceptDialog" parent="."]
+title = "การแจ้งเตือน"
+theme = SubResource("Theme_s32jo")
+
+[node name="back" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 168.0
+offset_right = 366.81577
+offset_bottom = 242.25
+rotation = 3.1415927
+texture_normal = ExtResource("16_wmt3j")
+texture_hover = ExtResource("17_j7nty")
+ignore_texture_size = true
+stretch_mode = 0
