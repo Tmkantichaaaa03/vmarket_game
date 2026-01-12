@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=4 uid="uid://bpcbh4wqerr0h"]
+[gd_scene load_steps=36 format=4 uid="uid://bpcbh4wqerr0h"]
 
 [ext_resource type="PackedScene" uid="uid://c231oiy5grhlk" path="res://vmarket_game/Player.tscn" id="1_1a4tb"]
 [ext_resource type="Script" uid="uid://coxrf0uaisp3i" path="res://vmarket_game/house_inside.gd" id="1_013yk"]
@@ -8,7 +8,6 @@
 [ext_resource type="Texture2D" uid="uid://crsr4aecb54he" path="res://vmarket_game/Alex_idle_anim_16x16.png" id="5_gxb5d"]
 [ext_resource type="Script" uid="uid://bamp1exqo2jac" path="res://vmarket_game/area_2d.gd" id="5_m7w8g"]
 [ext_resource type="PackedScene" uid="uid://0i6fjhxu0v03" path="res://vmarket_game/shop_scene.tscn" id="7_013yk"]
-[ext_resource type="Script" uid="uid://bcip8kd1wb3kk" path="res://vmarket_game/buy.gd" id="10_6arde"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c33rj"]
 size = Vector2(1932, 155)
@@ -21988,7 +21987,6 @@ tile_set = SubResource("TileSet_f7v26")
 
 [node name="buy" type="Area2D" parent="Counter"]
 position = Vector2(-8, 2)
-script = ExtResource("10_6arde")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Counter/buy"]
 position = Vector2(1396, 523)
