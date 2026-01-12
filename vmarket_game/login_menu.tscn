@@ -144,5 +144,5 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_qd2sl")
 text = "ยังไม่มีบัญชี ?  สมัครสมาชิก"
 
 [connection signal="pressed" from="AcceptBotton" to="." method="_on_accept_botton_pressed"]
-[connection signal="request_completed" from="HTTPRequest" to="." method="_on_http_request_request_completed"]
+[connection signal="request_completed" from="HTTPRequest" to="." method="_on_http_request_completed"]
 [connection signal="pressed" from="RegisterButton" to="." method="_on_register_button_pressed"]
