@@ -4,6 +4,7 @@ extends Control
 @onready var password_input = $password/LineEdit2
 @onready var http_request = $HTTPRequest
 
+# ปุ่มเข้าสู่ระบบ
 func _on_accept_botton_pressed():
 	var username = username_input.text.strip_edges()
 	var password = password_input.text.strip_edges()
@@ -19,6 +20,10 @@ func _on_accept_botton_pressed():
 	var url = "http://127.0.0.1/vmarket/api/auth/login.php"
 	http_request.request(url, headers, HTTPClient.METHOD_POST, json_data)
 
+# --- นี่คือส่วนที่ลิ้งไปหน้าสมัครสมาชิก ---
+func _on_register_button_pressed():
+	get_tree().change_scene_to_file("res://vmarket_game/register_menu.tscn")
+
 func _on_http_request_completed(_result, response_code, _headers, body):
 	if response_code != 200:
 		print("เชื่อมต่อล้มเหลว")
@@ -30,11 +35,10 @@ func _on_http_request_completed(_result, response_code, _headers, body):
 	if response and response.get("success") == true:
 		var user_data = response.get("user_data")
 		
-		# บันทึกค่าลง Global เพื่อส่งต่อไปหน้า World
+		# บันทึกข้อมูลลง Global
 		Global.current_username = user_data.get("username")
 		Global.selected_avatar_index = int(user_data.get("avatar_id"))
 		
-		print("ล็อกอินสำเร็จ! กำลังไปหน้า World...")
 		get_tree().change_scene_to_file("res://vmarket_game/world.tscn")
 	else:
-		print("Login Failed: ", response.get("message") if response else "Error")
+		print("Login Failed")
