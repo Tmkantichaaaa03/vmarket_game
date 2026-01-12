@@ -43,3 +43,11 @@ func play_walk_animation(dir: Vector2) -> void:
 	else:
 
 		anim.play(selected_name + "_walk_down")
+
+
+func _on_buy_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.
+
+
+func _on_buy_body_exited(body: Node2D) -> void:
+	pass # Replace with function body.

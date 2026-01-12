@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=4 uid="uid://dwbp86gwnkocd"]
+[gd_scene load_steps=14 format=4 uid="uid://cbnw7uhad0muj"]
 
 [ext_resource type="Script" uid="uid://rgh70nrcn1hq" path="res://vmarket_game/world.gd" id="1_p5ddv"]
 [ext_resource type="Texture2D" uid="uid://4y7d5i2qf7ft" path="res://vmarket_game/map/แมพ.jpg" id="2_i8eim"]
@@ -114,10 +114,10 @@ shape = SubResource("RectangleShape2D_cd4ew")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
-offset_left = 1544.0
-offset_top = -8.0
-offset_right = 1936.0
-offset_bottom = 480.0
+offset_left = 1569.0
+offset_top = -14.0
+offset_right = 1961.0
+offset_bottom = 474.0
 texture = ExtResource("6_aawjm")
 expand_mode = 1
 

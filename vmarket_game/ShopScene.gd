@@ -1,26 +1,14 @@
 extends Control
 
-@export var items = ["Potion", "Sword", "Shield"]
+func _on_texture_button_pressed():
+	print("ระบบ: กำลังกลับสู่หน้าภายในบ้าน...")
 
-func _ready():
-	_populate_items()
-	$Panel/CloseButton.pressed.connect(_close_shop)
+กำหนด Path ไฟล์หน้าที่จะกลับไป
+	var target_scene = "res://vmarket_game/house_inside.tscn"
 
-func _populate_items():
-	$Panel/ItemList.clear()
-	for item_name in items:
-		var hbox = HBoxContainer.new()
-		var label = Label.new()
-		label.text = item_name
-		hbox.add_child(label)
-		var buy_button = Button.new()
-		buy_button.text = "Buy"
-		buy_button.pressed.connect(_buy_item.bind(item_name))
-		hbox.add_child(buy_button)
-		$Panel/ItemList.add_child(hbox)
+คำสั่งเปลี่ยนหน้าแบบมาตรฐานของ Godot 4
+	var result = get_tree().change_scene_to_file(target_scene)
 
-func _buy_item(item_name):
-	print("คุณซื้อไอเท็ม:", item_name)
-
-func _close_shop():
-	get_tree().change_scene("res://house_inside.tscn")
+ตรวจสอบว่าเปลี่ยนหน้าสำเร็จหรือไม่
+	if result != OK:
+		print("Error: ไม่สามารถไปหน้า ", target_scene, " ได้ ตรวจสอบ Path อีกครั้ง")

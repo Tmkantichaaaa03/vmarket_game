@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://0i6fjhxu0v03"]
+[gd_scene load_steps=12 format=3 uid="uid://0i6fjhxu0v03"]
 
 [ext_resource type="Texture2D" uid="uid://doaipjr2mbu7x" path="res://vmarket_game/image/OIG1.Qlo.jpg" id="1_3p7ti"]
+[ext_resource type="Script" uid="uid://cgg22q8dycisa" path="res://vmarket_game/shop_scene.gd" id="1_4fx14"]
 [ext_resource type="Texture2D" uid="uid://chb1i430on2fb" path="res://vmarket_game/image/Pokecut_1768163041145.png" id="2_4fx14"]
 [ext_resource type="Texture2D" uid="uid://c53nrwxbpqhdq" path="res://vmarket_game/image/Pokecut_1768167183825.png" id="3_8r0by"]
 [ext_resource type="Texture2D" uid="uid://baotrx1p03rsy" path="res://vmarket_game/image/กรอบ5.png" id="4_dfkra"]
@@ -22,6 +23,7 @@ offset_right = 14.0
 offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_4fx14")
 metadata/_edit_lock_ = true
 
 [node name="Oig1_qlo" type="Sprite2D" parent="."]
@@ -148,3 +150,5 @@ texture = ExtResource("10_1uh6b")
 position = Vector2(1488.3406, -16.528687)
 scale = Vector2(0.9944643, 0.99962026)
 texture = ExtResource("10_1uh6b")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
