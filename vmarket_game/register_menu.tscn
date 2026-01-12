@@ -1,6 +1,215 @@
-[gd_scene load_steps=2 format=3 uid="uid://b6v364t7tl4rs"]
+[gd_scene load_steps=43 format=3 uid="uid://b75nl6tj4xgop"]
 
-[ext_resource type="Texture2D" uid="uid://cwhs2n8rww8w0" path="res://vmarket_game/image/พื้นหลังหน้าแรกมืด.png" id="1_eemat"]
+[ext_resource type="Texture2D" uid="uid://dmpuddkqjjrwm" path="res://vmarket_game/image/พื้นหลังหน้าแรก.png" id="1_eemat"]
+[ext_resource type="Script" uid="uid://dgg1gxqknka7f" path="res://vmarket_game/register_menu.gd" id="1_exctt"]
+[ext_resource type="Texture2D" uid="uid://chb1i430on2fb" path="res://vmarket_game/image/Pokecut_1768163041145.png" id="2_pic4r"]
+[ext_resource type="Texture2D" uid="uid://baotrx1p03rsy" path="res://vmarket_game/image/กรอบ5.png" id="3_a04qv"]
+[ext_resource type="Texture2D" uid="uid://b1ukgbn2ggtd1" path="res://vmarket_game/image/ปุ่มน้ำตาล.png" id="4_lhqvn"]
+[ext_resource type="Texture2D" uid="uid://c53nrwxbpqhdq" path="res://vmarket_game/image/Pokecut_1768167183825.png" id="5_a1hc2"]
+[ext_resource type="Texture2D" uid="uid://8dxiv3ak2pt" path="res://vmarket_game/image/ขวา.png" id="6_405ea"]
+[ext_resource type="Texture2D" uid="uid://myxriiawft55" path="res://vmarket_game/image/ซ้าย.png" id="7_dsx5i"]
+[ext_resource type="Texture2D" uid="uid://bvywjjmje1pm4" path="res://vmarket_game/Adam_idle_anim_16x16.png" id="8_cnrev"]
+[ext_resource type="Texture2D" uid="uid://crsr4aecb54he" path="res://vmarket_game/Alex_idle_anim_16x16.png" id="9_exctt"]
+[ext_resource type="Texture2D" uid="uid://43hbt6pb4v70" path="res://vmarket_game/Amelia_idle_anim_16x16.png" id="10_w8xxf"]
+[ext_resource type="Texture2D" uid="uid://bti04riliklci" path="res://vmarket_game/Bob_idle_anim_16x16.png" id="11_gtcp1"]
+[ext_resource type="Texture2D" uid="uid://y2lro4rpuxn1" path="res://vmarket_game/image/ปุ่มน้ำตาล2.png" id="13_w8xxf"]
+[ext_resource type="FontFile" uid="uid://iil8kvo82vev" path="res://vmarket_game/PSLCD3310.ttf" id="14_gtcp1"]
+[ext_resource type="Texture2D" uid="uid://dqq5jk4k24p4u" path="res://vmarket_game/image/Pokecut_1768167517223.png" id="15_ikcv6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ikcv6"]
+atlas = ExtResource("8_cnrev")
+region = Rect2(288, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s32jo"]
+atlas = ExtResource("8_cnrev")
+region = Rect2(304, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wmt3j"]
+atlas = ExtResource("8_cnrev")
+region = Rect2(320, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7nty"]
+atlas = ExtResource("8_cnrev")
+region = Rect2(336, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_od6av"]
+atlas = ExtResource("8_cnrev")
+region = Rect2(352, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ydid"]
+atlas = ExtResource("8_cnrev")
+region = Rect2(368, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hnh6y"]
+atlas = ExtResource("9_exctt")
+region = Rect2(288, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tk7di"]
+atlas = ExtResource("9_exctt")
+region = Rect2(304, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1s6h5"]
+atlas = ExtResource("9_exctt")
+region = Rect2(320, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pc4fi"]
+atlas = ExtResource("9_exctt")
+region = Rect2(336, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fai3p"]
+atlas = ExtResource("9_exctt")
+region = Rect2(352, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_12353"]
+atlas = ExtResource("9_exctt")
+region = Rect2(368, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_giofu"]
+atlas = ExtResource("10_w8xxf")
+region = Rect2(288, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p02vd"]
+atlas = ExtResource("10_w8xxf")
+region = Rect2(304, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vael5"]
+atlas = ExtResource("10_w8xxf")
+region = Rect2(320, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qqcug"]
+atlas = ExtResource("10_w8xxf")
+region = Rect2(336, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5so4"]
+atlas = ExtResource("10_w8xxf")
+region = Rect2(352, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vvljt"]
+atlas = ExtResource("10_w8xxf")
+region = Rect2(368, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c18ou"]
+atlas = ExtResource("11_gtcp1")
+region = Rect2(288, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7ndk7"]
+atlas = ExtResource("11_gtcp1")
+region = Rect2(304, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rokrt"]
+atlas = ExtResource("11_gtcp1")
+region = Rect2(320, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ohhip"]
+atlas = ExtResource("11_gtcp1")
+region = Rect2(336, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mk1mn"]
+atlas = ExtResource("11_gtcp1")
+region = Rect2(352, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1le7x"]
+atlas = ExtResource("11_gtcp1")
+region = Rect2(368, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5o58g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ikcv6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s32jo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wmt3j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j7nty")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_od6av")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ydid")
+}],
+"loop": true,
+"name": &"Adam",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hnh6y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tk7di")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1s6h5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pc4fi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fai3p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_12353")
+}],
+"loop": true,
+"name": &"Alex",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_giofu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p02vd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vael5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qqcug")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a5so4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vvljt")
+}],
+"loop": true,
+"name": &"Amelia",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c18ou")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7ndk7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rokrt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ohhip")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mk1mn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1le7x")
+}],
+"loop": true,
+"name": &"Bob",
+"speed": 5.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gtcp1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ikcv6"]
 
 [node name="RegisterMenu" type="Control"]
 layout_mode = 3
@@ -9,7 +218,340 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_exctt")
+metadata/_edit_lock_ = true
 
-[node name="พื้นหลังหน้าแรกมืด" type="Sprite2D" parent="."]
-position = Vector2(792, 512)
+[node name="พื้นหลังหน้าแรก" type="Sprite2D" parent="."]
+position = Vector2(929, 613)
+scale = Vector2(1.3945313, 1.1777344)
 texture = ExtResource("1_eemat")
+metadata/_edit_lock_ = true
+
+[node name="Pokecut1768163041145" type="Sprite2D" parent="."]
+position = Vector2(980, 510)
+scale = Vector2(1.4014945, 1.3888495)
+texture = ExtResource("2_pic4r")
+metadata/_edit_lock_ = true
+
+[node name="กรอบ5" type="Sprite2D" parent="."]
+position = Vector2(1408.0001, 208)
+scale = Vector2(0.24583334, 0.24280584)
+texture = ExtResource("3_a04qv")
+
+[node name="กรอบ5" type="Sprite2D" parent="กรอบ5"]
+position = Vector2(0.5776024, 402.58508)
+scale = Vector2(0.99209636, 0.94886875)
+texture = ExtResource("3_a04qv")
+
+[node name="กรอบ5" type="Sprite2D" parent="กรอบ5/กรอบ5"]
+position = Vector2(6.344452, 412.71387)
+scale = Vector2(1.007362, 1.0217366)
+texture = ExtResource("3_a04qv")
+
+[node name="กรอบ5" type="Sprite2D" parent="กรอบ5/กรอบ5/กรอบ5"]
+position = Vector2(6.344452, 412.71387)
+scale = Vector2(1.007362, 1.0217366)
+texture = ExtResource("3_a04qv")
+
+[node name="กรอบ5" type="Sprite2D" parent="กรอบ5/กรอบ5/กรอบ5/กรอบ5"]
+position = Vector2(6.344452, 412.71387)
+scale = Vector2(1.007362, 1.0217366)
+texture = ExtResource("3_a04qv")
+
+[node name="กรอบ5" type="Sprite2D" parent="กรอบ5/กรอบ5/กรอบ5/กรอบ5/กรอบ5"]
+position = Vector2(6.344452, 412.71387)
+scale = Vector2(1.007362, 1.0217366)
+texture = ExtResource("3_a04qv")
+
+[node name="กรอบ5" type="Sprite2D" parent="กรอบ5/กรอบ5/กรอบ5/กรอบ5/กรอบ5/กรอบ5"]
+position = Vector2(6.344452, 412.71387)
+scale = Vector2(1.007362, 1.0217366)
+texture = ExtResource("3_a04qv")
+
+[node name="Pokecut1768167183825" type="Sprite2D" parent="."]
+position = Vector2(496, 360)
+scale = Vector2(0.39843744, 0.45996094)
+texture = ExtResource("5_a1hc2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(496, 308.99997)
+scale = Vector2(13.484497, 10.1875)
+sprite_frames = SubResource("SpriteFrames_5o58g")
+animation = &"Amelia"
+frame_progress = 0.7972927
+
+[node name="right" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 518.0
+offset_top = 480.0
+offset_right = 654.0
+offset_bottom = 628.0
+texture_normal = ExtResource("6_405ea")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="lift" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 344.0
+offset_top = 484.0
+offset_right = 472.0
+offset_bottom = 628.0
+texture_normal = ExtResource("7_dsx5i")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Password" type="Label" parent="."]
+layout_mode = 0
+offset_left = 791.0
+offset_top = 667.0
+offset_right = 955.0
+offset_bottom = 739.0
+theme_override_colors/font_color = Color(0.38431373, 0.3137255, 0.23921569, 1)
+theme_override_colors/font_shadow_color = Color(0.15686275, 0.043137256, 0.08627451, 0.5254902)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("14_gtcp1")
+theme_override_font_sizes/font_size = 50
+text = "รหัสผ่าน"
+
+[node name="LineEdit" type="LineEdit" parent="Password"]
+layout_mode = 0
+offset_left = 385.0
+offset_top = -5.0
+offset_right = 849.0
+offset_bottom = 75.0
+theme_override_colors/font_color = Color(0.32941177, 0.24705882, 0.14901961, 1)
+theme_override_colors/font_placeholder_color = Color(0.63529414, 0.45882353, 0.28235295, 1)
+theme_override_fonts/font = ExtResource("14_gtcp1")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gtcp1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ikcv6")
+placeholder_text = "รหัสผ่าน"
+alignment = 1
+
+[node name="Confpass" type="Label" parent="."]
+layout_mode = 0
+offset_left = 792.0
+offset_top = 771.0
+offset_right = 1068.0
+offset_bottom = 843.0
+theme_override_colors/font_color = Color(0.38431373, 0.3137255, 0.23921569, 1)
+theme_override_colors/font_shadow_color = Color(0.15686275, 0.043137256, 0.08627451, 0.5254902)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("14_gtcp1")
+theme_override_font_sizes/font_size = 50
+text = "ยืนยันรหัสผ่าน"
+
+[node name="LineEdit" type="LineEdit" parent="Confpass"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = -5.0
+offset_right = 848.0
+offset_bottom = 75.0
+theme_override_colors/font_color = Color(0.32941177, 0.24705882, 0.14901961, 1)
+theme_override_colors/font_placeholder_color = Color(0.63529414, 0.45882353, 0.28235295, 1)
+theme_override_fonts/font = ExtResource("14_gtcp1")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gtcp1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ikcv6")
+placeholder_text = "ยืนยันรหัสผ่าน"
+alignment = 1
+
+[node name="phone" type="Label" parent="."]
+layout_mode = 0
+offset_left = 788.0
+offset_top = 564.0
+offset_right = 1060.0
+offset_bottom = 636.0
+theme_override_colors/font_color = Color(0.38431373, 0.3137255, 0.23921569, 1)
+theme_override_colors/font_shadow_color = Color(0.15686275, 0.043137256, 0.08627451, 0.5254902)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("14_gtcp1")
+theme_override_font_sizes/font_size = 50
+text = "เบอร์โทรศัพท์"
+
+[node name="LineEdit" type="LineEdit" parent="phone"]
+layout_mode = 0
+offset_left = 388.0
+offset_top = -4.0
+offset_right = 852.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(0.32941177, 0.24705882, 0.14901961, 1)
+theme_override_colors/font_placeholder_color = Color(0.63529414, 0.45882353, 0.28235295, 1)
+theme_override_fonts/font = ExtResource("14_gtcp1")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gtcp1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ikcv6")
+placeholder_text = "กรอกเบอร์โทรศัพท์"
+alignment = 1
+
+[node name="address" type="Label" parent="."]
+layout_mode = 0
+offset_left = 784.0
+offset_top = 465.0
+offset_right = 912.0
+offset_bottom = 537.0
+theme_override_colors/font_color = Color(0.38431373, 0.3137255, 0.23921569, 1)
+theme_override_colors/font_shadow_color = Color(0.15686275, 0.043137256, 0.08627451, 0.5254902)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("14_gtcp1")
+theme_override_font_sizes/font_size = 50
+text = "ที่อยู่"
+
+[node name="LineEdit" type="LineEdit" parent="address"]
+layout_mode = 0
+offset_left = 392.0
+offset_top = -5.0
+offset_right = 856.0
+offset_bottom = 75.0
+theme_override_colors/font_color = Color(0.32941177, 0.24705882, 0.14901961, 1)
+theme_override_colors/font_placeholder_color = Color(0.63529414, 0.45882353, 0.28235295, 1)
+theme_override_fonts/font = ExtResource("14_gtcp1")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gtcp1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ikcv6")
+placeholder_text = "กรอกที่อยู่"
+alignment = 1
+
+[node name="email" type="Label" parent="."]
+layout_mode = 0
+offset_left = 784.0
+offset_top = 365.0
+offset_right = 912.0
+offset_bottom = 437.0
+pivot_offset = Vector2(88, 51)
+theme_override_colors/font_color = Color(0.38431373, 0.3137255, 0.23921569, 1)
+theme_override_colors/font_shadow_color = Color(0.15686275, 0.043137256, 0.08627451, 0.5254902)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("14_gtcp1")
+theme_override_font_sizes/font_size = 50
+text = "อีเมล"
+
+[node name="LineEdit" type="LineEdit" parent="email"]
+layout_mode = 0
+offset_left = 392.0
+offset_top = -5.0
+offset_right = 856.0
+offset_bottom = 75.0
+theme_override_colors/font_color = Color(0.32941177, 0.24705882, 0.14901961, 1)
+theme_override_colors/font_placeholder_color = Color(0.63529414, 0.45882353, 0.28235295, 1)
+theme_override_fonts/font = ExtResource("14_gtcp1")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gtcp1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ikcv6")
+placeholder_text = "กรอกอีเมล"
+alignment = 1
+
+[node name="name" type="Label" parent="."]
+layout_mode = 0
+offset_left = 784.0
+offset_top = 265.0
+offset_right = 912.0
+offset_bottom = 337.0
+theme_override_colors/font_color = Color(0.38431373, 0.3137255, 0.23921569, 1)
+theme_override_colors/font_shadow_color = Color(0.15686275, 0.043137256, 0.08627451, 0.5254902)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("14_gtcp1")
+theme_override_font_sizes/font_size = 50
+text = "ชื่อ - นามสกุล"
+
+[node name="LineEdit" type="LineEdit" parent="name"]
+layout_mode = 0
+offset_left = 392.0
+offset_top = 3.0
+offset_right = 856.0
+offset_bottom = 83.0
+theme_override_colors/font_color = Color(0.32941177, 0.24705882, 0.14901961, 1)
+theme_override_colors/font_placeholder_color = Color(0.63529414, 0.45882353, 0.28235295, 1)
+theme_override_fonts/font = ExtResource("14_gtcp1")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gtcp1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ikcv6")
+placeholder_text = "กรอกชื่อ - นามสกุล"
+alignment = 1
+
+[node name="Username" type="Label" parent="."]
+layout_mode = 0
+offset_left = 784.0
+offset_top = 168.0
+offset_right = 912.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0.38431373, 0.3137255, 0.23921569, 1)
+theme_override_colors/font_shadow_color = Color(0.15686275, 0.043137256, 0.08627451, 0.5254902)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("14_gtcp1")
+theme_override_font_sizes/font_size = 50
+text = "ชื่อผู้ใช้"
+
+[node name="LineEdit" type="LineEdit" parent="Username"]
+layout_mode = 0
+offset_left = 392.0
+offset_top = 2.0
+offset_right = 856.0
+offset_bottom = 82.0
+theme_override_colors/font_color = Color(0.32941177, 0.24705882, 0.14901961, 1)
+theme_override_colors/font_placeholder_color = Color(0.63529414, 0.45882353, 0.28235295, 1)
+theme_override_fonts/font = ExtResource("14_gtcp1")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gtcp1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ikcv6")
+placeholder_text = "กรอกชื่อผู้ใช้"
+alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 816.0
+offset_right = 712.0
+offset_bottom = 901.0
+texture_normal = ExtResource("4_lhqvn")
+texture_hover = ExtResource("13_w8xxf")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="regisText" type="Label" parent="TextureButton"]
+layout_mode = 0
+offset_left = 122.0
+offset_top = 12.0
+offset_right = 354.0
+offset_bottom = 84.0
+theme_override_fonts/font = ExtResource("14_gtcp1")
+theme_override_font_sizes/font_size = 40
+text = "สมัครสมาชิก"
+
+[node name="regisText" type="Label" parent="TextureButton/regisText"]
+layout_mode = 0
+offset_left = -26.0
+offset_top = -172.0
+offset_right = 206.0
+offset_bottom = -100.0
+theme_override_fonts/font = ExtResource("14_gtcp1")
+theme_override_font_sizes/font_size = 40
+
+[node name="Pokecut1768167517223" type="Sprite2D" parent="."]
+position = Vector2(496, 152)
+scale = Vector2(0.5083865, 0.45087844)
+texture = ExtResource("15_ikcv6")
+
+[node name="email2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 136.0
+offset_right = 620.0
+offset_bottom = 208.0
+pivot_offset = Vector2(88, 51)
+theme_override_colors/font_color = Color(0.38431373, 0.3137255, 0.23921569, 1)
+theme_override_colors/font_shadow_color = Color(0.15686275, 0.043137256, 0.08627451, 0.5254902)
+theme_override_constants/shadow_offset_x = 1
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("14_gtcp1")
+theme_override_font_sizes/font_size = 39
+text = "ตัวละคร"
+horizontal_alignment = 1
