@@ -1,71 +1,53 @@
 extends Control
 
-# อ้างอิงโหนดตาม Scene Tree ของคุณ
+# อ้างอิงโหนด HTTPRequest
 @onready var http_request = $HTTPRequest
-@onready var username_input = $"username/LineEdit"
-@onready var password_input = $"password/LineEdit2"
 
 func _ready():
-	# ตรวจสอบการเชื่อมต่อสัญญาณ
-	if not http_request.is_connected("request_completed", _on_http_request_request_completed):
-		http_request.connect("request_completed", _on_http_request_request_completed)
-
-# 1. ฟังก์ชันเมื่อกดปุ่ม ยืนยัน (AcceptBotton)
-func _on_accept_botton_pressed():
-	# ใช้ .strip_edges() เพื่อลบช่องว่างที่อาจเผลอพิมพ์เกินมา (เหมือนใน Postman)
-	var user = username_input.text.strip_edges()
-	var password_val = password_input.text.strip_edges() 
+	# เชื่อมต่อสัญญาณ HTTP
+	http_request.request_completed.connect(_on_http_request_completed)
 	
-	if user == "" or password_val == "":
-		print("ระบบ: กรุณากรอกข้อมูลให้ครบ")
-		return
+	# ตรวจสอบและเชื่อมต่อปุ่ม Login (ชื่อ AcceptBotton ตามภาพ)
+	if has_node("AcceptBotton"):
+		$AcceptBotton.pressed.connect(_on_login_pressed)
+	else:
+		print("Error: หาโหนด AcceptBotton ไม่เจอ")
 
-	# URL ที่ถูกต้องตามโฟลเดอร์ใน XAMPP
-	var url = "http://localhost/vmarket/api/auth/login.php"
+	# ตรวจสอบและเชื่อมต่อปุ่ม Register (ชื่อ RegisterButto ตามภาพ)
+	if has_node("RegisterButto"):
+		$RegisterButto.pressed.connect(_on_register_pressed)
+	else:
+		print("Error: หาโหนด RegisterButto ไม่เจอ")
+
+# ฟังก์ชันกดไปหน้าสมัครสมาชิก
+func _on_register_pressed():
+	# ตรวจสอบ Path ไฟล์ .tscn ของคุณให้ถูกต้อง
+	get_tree().change_scene_to_file("res://vmarket_game/register_menu.tscn")
+
+# ฟังก์ชันกด Login
+func _on_login_pressed():
+	# อ้างอิง Path ไปยัง LineEdit ของ username และ password
+	var username = $username/LineEdit.text
+	var password = $password/LineEdit2.text
 	
-	# Header ต้องระบุว่าเป็น JSON (จุดสำคัญที่ทำให้เหมือน Postman)
+	var data = {"username": username, "password": password}
+	var json_query = JSON.stringify(data)
 	var headers = ["Content-Type: application/json"]
+	var url = "http://localhost/VMARKET/api/auth/login.php"
 	
-	# เตรียมข้อมูล Dictionary (ชื่อ Key ต้องตรงกับที่ PHP รอรับ)
-	var auth_data = {
-		"username": user,
-		"password": password_val
-	}
-	
-	# ต้องใช้ JSON.stringify เพื่อแปลงเป็นข้อความส่งไป (ห้ามส่ง auth_data ไปเฉยๆ)
-	var json_query = JSON.stringify(auth_data)
-	
-	print("ระบบ: กำลังส่งข้อมูลไปยัง vmarket API... (JSON: ", json_query, ")")
 	http_request.request(url, headers, HTTPClient.METHOD_POST, json_query)
 
-# 2. ฟังก์ชันรับข้อมูลกลับจาก PHP (ชื่อฟังก์ชันตามที่ Error แจ้งเตือนมา)
-func _on_http_request_request_completed(_result, response_code, _headers, body):
-	print("--- ได้รับการตอบกลับจากเซิร์ฟเวอร์แล้ว ---")
-	print("HTTP Status Code: ", response_code) 
+# ฟังก์ชันจัดการข้อมูลหลัง Login
+func _on_http_request_completed(_result, response_code, _headers, body):
+	var response = JSON.parse_string(body.get_string_from_utf8())
 	
-	var response_text = body.get_string_from_utf8()
-	print("Raw Response: ", response_text) # ดูว่า PHP ตอบอะไรกลับมา
-	
-	var json = JSON.new()
-	var parse_err = json.parse(response_text)
-	
-	if parse_err == OK:
-		var response = json.get_data()
+	if response_code == 200 and response.get("success") == true:
+		var user_data = response.get("user_data")
+		if user_data:
+			# บันทึก Avatar ID ลง Global
+			Global.selected_avatar_index = int(user_data.get("avatar_id")) - 1
 		
-		# เช็ค success จาก JSON ที่ PHP ส่งมา
-		if response.has("success") and response.success:
-			print("ล็อกอินสำเร็จ! ยินดีต้อนรับ: ", response.user_data.username)
-			# เปลี่ยนหน้าไปสู่เกมหลัก
-			get_tree().change_scene_to_file("res://World.tscn")
-		else:
-			# แสดงข้อความ Error เช่น Invalid password
-			print("การล็อกอินล้มเหลว: ", response.get("message", "Unknown error"))
+		# วาร์ปเข้าหน้า World
+		get_tree().change_scene_to_file("res://vmarket_game/world.tscn")
 	else:
-		print("Error: ข้อมูลที่ส่งกลับมาไม่ใช่รูปแบบ JSON")
-		
-func _on_register_button_pressed():
-	print("ระบบ: กำลังย้ายไปหน้าสมัครสมาชิก...")
-	var error = get_tree().change_scene_to_file("res://vmarket_game/register_menu.tscn")
-	
-	if error != OK:
-		print("Error: ไม่พบไฟล์หน้าสมัครสมาชิก (ตรวจสอบชื่อไฟล์อีกครั้ง)")
+		print("Login Failed: ", response.get("message", "Unknown Error"))
