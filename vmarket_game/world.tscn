@@ -1,18 +1,24 @@
 
+
 [gd_scene load_steps=44 format=4 uid="uid://dwbp86gwnkocd"]
->>>>>>> 66f5ea9d9acbb52aeb545b37ada1f5b29f70605d
+
+[gd_scene load_steps=48 format=4 uid="uid://dwbp86gwnkocd"]
 
 [ext_resource type="Script" uid="uid://rgh70nrcn1hq" path="res://vmarket_game/world.gd" id="1_p5ddv"]
 [ext_resource type="Texture2D" uid="uid://4y7d5i2qf7ft" path="res://vmarket_game/map/แมพ.jpg" id="2_i8eim"]
 [ext_resource type="PackedScene" uid="uid://c231oiy5grhlk" path="res://vmarket_game/Player.tscn" id="3_i8eim"]
 [ext_resource type="Texture2D" uid="uid://p7gnjluj8jtv" path="res://vmarket_game/global.png" id="4_p5ddv"]
 [ext_resource type="Script" uid="uid://chl02sx3d0xlq" path="res://vmarket_game/scripts/door_area.gd" id="5_p5ddv"]
+[ext_resource type="Texture2D" uid="uid://w4w4mcnofu8o" path="res://vmarket_game/image/Pokecut_1768164353676.png" id="6_aawjm"]
 [ext_resource type="Script" uid="uid://ckxc8rq0d5knu" path="res://vmarket_game/username_label.gd" id="7_bkayi"]
 [ext_resource type="Texture2D" uid="uid://bvywjjmje1pm4" path="res://vmarket_game/Adam_idle_anim_16x16.png" id="7_x3joa"]
 [ext_resource type="Texture2D" uid="uid://crsr4aecb54he" path="res://vmarket_game/Alex_idle_anim_16x16.png" id="8_mtrsx"]
 [ext_resource type="Texture2D" uid="uid://43hbt6pb4v70" path="res://vmarket_game/Amelia_idle_anim_16x16.png" id="9_m4yd0"]
 [ext_resource type="Texture2D" uid="uid://bti04riliklci" path="res://vmarket_game/Bob_idle_anim_16x16.png" id="10_sm55s"]
 [ext_resource type="Script" uid="uid://np5123llyg03" path="res://vmarket_game/ui_avatar_display.gd" id="11_edwa7"]
+[ext_resource type="FontFile" uid="uid://iil8kvo82vev" path="res://vmarket_game/PSLCD3310.ttf" id="12_m4yd0"]
+[ext_resource type="Texture2D" uid="uid://b1ukgbn2ggtd1" path="res://vmarket_game/image/ปุ่มน้ำตาล.png" id="14_edwa7"]
+[ext_resource type="Texture2D" uid="uid://y2lro4rpuxn1" path="res://vmarket_game/image/ปุ่มน้ำตาล2.png" id="15_mqmmo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aawjm"]
 texture = ExtResource("4_p5ddv")
@@ -267,6 +273,7 @@ texture = ExtResource("2_i8eim")
 metadata/_edit_lock_ = true
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="."]
+texture_filter = 1
 position = Vector2(-1900, -200)
 scale = Vector2(3, 3)
 tile_map_data = PackedByteArray("AAAzAAUAAAAAAAAAAAAzAAYAAAAAAAEAAAAzAAcAAAAAAAIAAAAzAAgAAAAAAAMAAAA0AAUAAAABAAAAAAA0AAYAAAABAAEAAAA0AAcAAAABAAIAAAA0AAgAAAABAAMAAAA1AAUAAAACAAAAAAA1AAYAAAACAAEAAAA1AAcAAAACAAIAAAA1AAgAAAACAAMAAAA2AAUAAAADAAAAAAA2AAYAAAADAAEAAAA2AAcAAAADAAIAAAA2AAgAAAADAAMAAAA=")
@@ -312,18 +319,59 @@ shape = SubResource("RectangleShape2D_cd4ew")
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 
-=======
->>>>>>> 66f5ea9d9acbb52aeb545b37ada1f5b29f70605d
+
 [node name="Label" type="Label" parent="CanvasLayer"]
 offset_right = 40.0
 offset_bottom = 23.0
 script = ExtResource("7_bkayi")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer"]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+offset_left = 1576.0
+offset_right = 1936.0
+offset_bottom = 448.0
+texture = ExtResource("6_aawjm")
+expand_mode = 1
+
+[node name="AvatarProfile" type="AnimatedSprite2D" parent="CanvasLayer"]
+texture_filter = 1
+position = Vector2(1760.0001, 56)
+scale = Vector2(10.7187605, 7.7500005)
 sprite_frames = SubResource("SpriteFrames_m1ghl")
 animation = &"Amelia"
-autoplay = "Amelia"
 script = ExtResource("11_edwa7")
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 1672.0
+offset_top = 195.0
+offset_right = 1856.0
+offset_bottom = 235.0
+theme_override_colors/font_color = Color(0.0035191667, 0.0035191681, 0.0035191672, 1)
+theme_override_fonts/font = ExtResource("12_m4yd0")
+theme_override_font_sizes/font_size = 20
+text = "กกกหกก"
+horizontal_alignment = 1
+script = ExtResource("7_bkayi")
+
+[node name="TextureButton" type="TextureButton" parent="CanvasLayer"]
+offset_left = 1688.0
+offset_top = 256.0
+offset_right = 1848.0
+offset_bottom = 301.0
+texture_normal = ExtResource("14_edwa7")
+texture_hover = ExtResource("15_mqmmo")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="CanvasLayer/TextureButton"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 8.0
+offset_right = 133.0
+offset_bottom = 38.0
+theme_override_fonts/font = ExtResource("12_m4yd0")
+theme_override_font_sizes/font_size = 19
+text = "ตะกร้าสินค้า"
 
 [connection signal="body_entered" from="DoorArea" to="DoorArea" method="_on_body_entered"]
 [connection signal="body_exited" from="DoorArea" to="DoorArea" method="_on_body_exited"]
+[connection signal="pressed" from="CanvasLayer/TextureButton" to="." method="_on_texture_button_pressed"]

@@ -1,7 +1,10 @@
 extends Node
 
-var spawn_name := ""
+# เก็บชื่อผู้ใช้ที่ล็อกอินเข้ามา (เริ่มต้นเป็น Guest)
+var current_username: String = "Guest"
 
-var selected_avatar_index: int = 0
 
-var current_username = "Guest" # เพิ่มตัวแปรนี้เพื่อเก็บชื่อ
+var selected_avatar_index: int = 1 
+
+
+var spawn_name: String = ""
