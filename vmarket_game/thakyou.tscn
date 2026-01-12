@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://c7pxlp7mtfjah"]
+[gd_scene load_steps=7 format=3 uid="uid://c7pxlp7mtfjah"]
 
 [ext_resource type="Texture2D" uid="uid://cwhs2n8rww8w0" path="res://vmarket_game/image/พื้นหลังหน้าแรกมืด.png" id="1_gmtl3"]
+[ext_resource type="Script" uid="uid://b55ysqgddurbe" path="res://vmarket_game/thakyou.gd" id="1_m024s"]
 [ext_resource type="Texture2D" uid="uid://chb1i430on2fb" path="res://vmarket_game/image/Pokecut_1768163041145.png" id="2_m024s"]
 [ext_resource type="FontFile" uid="uid://iil8kvo82vev" path="res://vmarket_game/PSLCD3310.ttf" id="3_i5u3d"]
 [ext_resource type="Texture2D" uid="uid://y2lro4rpuxn1" path="res://vmarket_game/image/ปุ่มน้ำตาล2.png" id="4_e0gd8"]
@@ -13,6 +14,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_m024s")
 metadata/_edit_lock_ = true
 
 [node name="พื้นหลังหน้าแรกมืด" type="Sprite2D" parent="."]
@@ -83,3 +85,5 @@ theme_override_font_sizes/font_size = 40
 text = "กลับหน้าแรก"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
