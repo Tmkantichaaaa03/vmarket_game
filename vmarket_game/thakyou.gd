@@ -1,11 +1,14 @@
 extends Control
 
-
-# Called when the node enters the scene tree for the first time.
+# ฟังก์ชันนี้จะทำงานเมื่อเข้าสู่ฉากครั้งแรก (ถ้าไม่ได้ใช้ ลบออกได้ครับ)
 func _ready() -> void:
-	pass # Replace with function body.
+	pass 
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+# ฟังก์ชันนี้จะทำงานทุกๆ เฟรม (ถ้าไม่ได้ใช้ ลบออกได้เพื่อประหยัดทรัพยากร)
 func _process(delta: float) -> void:
 	pass
+
+# ฟังก์ชันที่เชื่อมกับปุ่ม "กลับ"
+func _on_texture_button_pressed() -> void:
+	# คำสั่งเปลี่ยนฉากไปยังหน้า house_inside
+	get_tree().change_scene_to_file("res://vmarket_game/world.tscn")
