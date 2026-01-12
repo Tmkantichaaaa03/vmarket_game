@@ -1,0 +1,150 @@
+[gd_scene load_steps=11 format=3 uid="uid://0i6fjhxu0v03"]
+
+[ext_resource type="Texture2D" uid="uid://doaipjr2mbu7x" path="res://vmarket_game/image/OIG1.Qlo.jpg" id="1_3p7ti"]
+[ext_resource type="Texture2D" uid="uid://chb1i430on2fb" path="res://vmarket_game/image/Pokecut_1768163041145.png" id="2_4fx14"]
+[ext_resource type="Texture2D" uid="uid://c53nrwxbpqhdq" path="res://vmarket_game/image/Pokecut_1768167183825.png" id="3_8r0by"]
+[ext_resource type="Texture2D" uid="uid://baotrx1p03rsy" path="res://vmarket_game/image/กรอบ5.png" id="4_dfkra"]
+[ext_resource type="Texture2D" uid="uid://b1ukgbn2ggtd1" path="res://vmarket_game/image/ปุ่มน้ำตาล.png" id="5_ti254"]
+[ext_resource type="Texture2D" uid="uid://y2lro4rpuxn1" path="res://vmarket_game/image/ปุ่มน้ำตาล2.png" id="6_7gmuc"]
+[ext_resource type="FontFile" uid="uid://iil8kvo82vev" path="res://vmarket_game/PSLCD3310.ttf" id="7_0ix7p"]
+[ext_resource type="Texture2D" uid="uid://dqq5jk4k24p4u" path="res://vmarket_game/image/Pokecut_1768167517223.png" id="8_t3530"]
+[ext_resource type="Texture2D" uid="uid://dhpch23cwo5ou" path="res://vmarket_game/image/กรอบข้อความ.png" id="9_c00qm"]
+[ext_resource type="Texture2D" uid="uid://dnxrk5leogtfi" path="res://vmarket_game/image/กล่องใส่รูป.png" id="10_1uh6b"]
+
+[node name="ShopScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 14.0
+offset_top = -3.0
+offset_right = 14.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="Oig1_qlo" type="Sprite2D" parent="."]
+position = Vector2(952.50006, 544.5)
+scale = Vector2(1.2402345, 1.0478516)
+texture = ExtResource("1_3p7ti")
+metadata/_edit_lock_ = true
+
+[node name="Pokecut1768163041145" type="Sprite2D" parent="."]
+position = Vector2(943.49994, 521.875)
+scale = Vector2(1.5210598, 1.4144176)
+texture = ExtResource("2_4fx14")
+metadata/_edit_lock_ = true
+
+[node name="Pokecut1768167183825" type="Sprite2D" parent="."]
+position = Vector2(427, 334)
+scale = Vector2(0.40234375, 0.3818359)
+texture = ExtResource("3_8r0by")
+
+[node name="กรอบ5" type="Sprite2D" parent="."]
+position = Vector2(444, 610.5)
+scale = Vector2(0.30416667, 0.45683455)
+texture = ExtResource("4_dfkra")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 245.0
+offset_top = 824.0
+offset_right = 637.0
+offset_bottom = 926.0
+texture_normal = ExtResource("5_ti254")
+texture_hover = ExtResource("6_7gmuc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="TextureButton"]
+layout_mode = 0
+offset_left = 135.0
+offset_top = 11.0
+offset_right = 422.0
+offset_bottom = 83.0
+theme_override_fonts/font = ExtResource("7_0ix7p")
+theme_override_font_sizes/font_size = 50
+text = "กลับ"
+
+[node name="Pokecut1768167517223" type="Sprite2D" parent="."]
+position = Vector2(421.00003, 137.00002)
+scale = Vector2(0.54872215, 0.4528754)
+texture = ExtResource("8_t3530")
+
+[node name="กรอบข้อความ" type="Sprite2D" parent="."]
+position = Vector2(447, 610)
+scale = Vector2(0.4280173, 0.3283732)
+texture = ExtResource("9_c00qm")
+
+[node name="กรอบ6" type="Sprite2D" parent="."]
+position = Vector2(1173.125, 192.00002)
+scale = Vector2(0.2154948, 0.3830935)
+texture = ExtResource("4_dfkra")
+
+[node name="กรอบ7" type="Sprite2D" parent="."]
+position = Vector2(1195.0001, 469)
+scale = Vector2(0.24817705, 0.3902878)
+texture = ExtResource("4_dfkra")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 998.0
+offset_top = 146.0
+offset_right = 1354.0
+offset_bottom = 230.0
+theme_override_colors/font_color = Color(0.008202022, 0.008202025, 0.008202025, 1)
+theme_override_fonts/font = ExtResource("7_0ix7p")
+theme_override_font_sizes/font_size = 50
+text = "รายละเอียดสินค้า"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 985.0
+offset_top = 437.0
+offset_right = 1445.0
+offset_bottom = 543.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_0ix7p")
+theme_override_font_sizes/font_size = 50
+text = "สินค้าทั้งหมด"
+
+[node name="กล่องใส่รูป" type="Sprite2D" parent="."]
+position = Vector2(979, 643.00006)
+scale = Vector2(0.46039188, 0.48424184)
+texture = ExtResource("10_1uh6b")
+
+[node name="กล่องใส่รูป" type="Sprite2D" parent="กล่องใส่รูป"]
+position = Vector2(509.2061, -8.829177)
+scale = Vector2(1.0073311, 0.99179596)
+texture = ExtResource("10_1uh6b")
+
+[node name="กล่องใส่รูป2" type="Sprite2D" parent="กล่องใส่รูป"]
+position = Vector2(1005.39355, -12.648579)
+scale = Vector2(1.0027754, 0.9709765)
+texture = ExtResource("10_1uh6b")
+
+[node name="กล่องใส่รูป3" type="Sprite2D" parent="กล่องใส่รูป"]
+position = Vector2(1446.8652, -12.132446)
+scale = Vector2(0.9833487, 1.0070361)
+texture = ExtResource("10_1uh6b")
+
+[node name="กล่องใส่รูป2" type="Sprite2D" parent="."]
+position = Vector2(976, 847.99994)
+scale = Vector2(0.44882202, 0.484)
+texture = ExtResource("10_1uh6b")
+
+[node name="กล่องใส่รูป2" type="Sprite2D" parent="กล่องใส่รูป2"]
+position = Vector2(1033.8174, -8.264346)
+scale = Vector2(1.0855592, 1.013699)
+texture = ExtResource("10_1uh6b")
+
+[node name="กล่องใส่รูป3" type="Sprite2D" parent="กล่องใส่รูป2"]
+position = Vector2(524.70654, -5.165161)
+scale = Vector2(1.0741726, 1.0031399)
+texture = ExtResource("10_1uh6b")
+
+[node name="กล่องใส่รูป4" type="Sprite2D" parent="กล่องใส่รูป2"]
+position = Vector2(1488.3406, -16.528687)
+scale = Vector2(0.9944643, 0.99962026)
+texture = ExtResource("10_1uh6b")

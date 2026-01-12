@@ -1,9 +1,13 @@
-[gd_scene load_steps=23 format=4 uid="uid://bpcbh4wqerr0h"]
+[gd_scene load_steps=35 format=4 uid="uid://bpcbh4wqerr0h"]
 
 [ext_resource type="PackedScene" uid="uid://b16cwcguffiif" path="res://vmarket_game/Player.tscn" id="1_1a4tb"]
+[ext_resource type="Script" uid="uid://coxrf0uaisp3i" path="res://vmarket_game/house_inside.gd" id="1_013yk"]
 [ext_resource type="Texture2D" uid="uid://bkhinvurrrux0" path="res://vmarket_game/01.png" id="1_c33rj"]
 [ext_resource type="Texture2D" uid="uid://bwupuaubef2c5" path="res://vmarket_game/free_overview.png" id="3_cmtxs"]
 [ext_resource type="Script" uid="uid://c18a21wdmycce" path="res://vmarket_game/exit_area.gd" id="4_j53n3"]
+[ext_resource type="Texture2D" uid="uid://crsr4aecb54he" path="res://vmarket_game/Alex_idle_anim_16x16.png" id="5_gxb5d"]
+[ext_resource type="Script" uid="uid://bamp1exqo2jac" path="res://vmarket_game/area_2d.gd" id="5_m7w8g"]
+[ext_resource type="PackedScene" uid="uid://0i6fjhxu0v03" path="res://vmarket_game/shop_scene.tscn" id="7_013yk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c33rj"]
 size = Vector2(1932, 155)
@@ -14535,9 +14539,6 @@ height = 180.0
 a = Vector2(-4, 228)
 b = Vector2(287, 221)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_013yk"]
-size = Vector2(43, 54)
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gxb5d"]
 texture = ExtResource("3_cmtxs")
 46:0/0 = 0
@@ -21789,7 +21790,65 @@ sources/0 = SubResource("TileSetAtlasSource_gxb5d")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dnxn2"]
 size = Vector2(201, 111)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_f7v26"]
+atlas = ExtResource("5_gxb5d")
+region = Rect2(288, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m7w8g"]
+atlas = ExtResource("5_gxb5d")
+region = Rect2(304, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_013yk"]
+atlas = ExtResource("5_gxb5d")
+region = Rect2(320, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dnxn2"]
+atlas = ExtResource("5_gxb5d")
+region = Rect2(336, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6arde"]
+atlas = ExtResource("5_gxb5d")
+region = Rect2(352, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c6fuc"]
+atlas = ExtResource("5_gxb5d")
+region = Rect2(368, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ol0wc"]
+animations = [{
+"frames": [{
+"duration": 1.01,
+"texture": SubResource("AtlasTexture_f7v26")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m7w8g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_013yk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dnxn2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6arde")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c6fuc")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7tqsv"]
+radius = 89.0
+height = 190.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_013yk"]
+size = Vector2(43, 54)
+
 [node name="house_inside" type="Node2D"]
+script = ExtResource("1_013yk")
 
 [node name="01" type="Sprite2D" parent="."]
 position = Vector2(966, 545)
@@ -21869,6 +21928,38 @@ shape = SubResource("CapsuleShape2D_j53n3")
 position = Vector2(454, 783)
 shape = SubResource("SegmentShape2D_j53n3")
 
+[node name="TileMapLayer3" type="TileMapLayer" parent="."]
+scale = Vector2(2.8, 2.8)
+tile_map_data = PackedByteArray("AAAfADgAAAADADQAAAAfADkAAAADADUAAAAfADoAAAADADYAAAAfADsAAAADADcAAAAgADgAAAAEADQAAAAgADkAAAAEADUAAAAgADoAAAAEADYAAAAgADsAAAAEADcAAAAhADgAAAAFADQAAAAhADkAAAAFADUAAAAhADoAAAAFADYAAAAhADsAAAAFADcAAAAiADgAAAAGADQAAAAiADkAAAAGADUAAAAiADoAAAAGADYAAAAiADsAAAAGADcAAAAjADgAAAAHADQAAAAjADkAAAAHADUAAAAjADoAAAAHADYAAAAjADsAAAAHADcAAAAkADgAAAAIADQAAAAkADkAAAAIADUAAAAkADoAAAAIADYAAAAkADsAAAAIADcAAABDABsAAAADADQAAABDABwAAAADADUAAABDAB0AAAADADYAAABDAB4AAAADADcAAABEABsAAAAEADQAAABEABwAAAAEADUAAABEAB0AAAAEADYAAABEAB4AAAAEADcAAABFABsAAAAFADQAAABFABwAAAAFADUAAABFAB0AAAAFADYAAABFAB4AAAAFADcAAABGABsAAAAGADQAAABGABwAAAAGADUAAABGAB0AAAAGADYAAABGAB4AAAAGADcAAABHABsAAAAHADQAAABHABwAAAAHADUAAABHAB0AAAAHADYAAABHAB4AAAAHADcAAABIABsAAAAIADQAAABIABwAAAAIADUAAABIAB0AAAAIADYAAABIAB4AAAAIADcAAAAKABcAAAAGADgAAAALABcAAAAHADgAAAAMABcAAAAIADgAAAANABcAAAAJADgAAAALABMAAAAGADgAAAALABQAAAAGADkAAAALABUAAAAGADoAAAALABYAAAAGADsAAAAMABMAAAAHADgAAAAMABQAAAAHADkAAAAMABUAAAAHADoAAAAMABYAAAAHADsAAAANABMAAAAIADgAAAANABQAAAAIADkAAAANABUAAAAIADoAAAANABYAAAAIADsAAAAOABMAAAAJADgAAAAOABQAAAAJADkAAAAOABUAAAAJADoAAAAOABYAAAAJADsAAAA=")
+tile_set = SubResource("TileSet_f7v26")
+
+[node name="ExitArea" type="Area2D" parent="."]
+script = ExtResource("4_j53n3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitArea"]
+position = Vector2(578, 965)
+shape = SubResource("RectangleShape2D_dnxn2")
+
+[node name="NPC" type="Node2D" parent="."]
+position = Vector2(67, -53)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="NPC"]
+position = Vector2(687, 442)
+scale = Vector2(8.625, 6.75)
+sprite_frames = SubResource("SpriteFrames_ol0wc")
+animation = &"walk"
+autoplay = "walk"
+frame_progress = 0.9835643
+
+[node name="Area2D" type="Area2D" parent="NPC"]
+script = ExtResource("5_m7w8g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/Area2D"]
+texture_filter = 1
+position = Vector2(685.00006, 476)
+scale = Vector2(0.99999994, 1)
+shape = SubResource("CapsuleShape2D_7tqsv")
+
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_1a4tb")]
 position = Vector2(582, 913)
 
@@ -21881,17 +21972,12 @@ rotation_smoothing_enabled = true
 position = Vector2(-11, 61)
 shape = SubResource("RectangleShape2D_013yk")
 
-[node name="TileMapLayer3" type="TileMapLayer" parent="."]
-scale = Vector2(2.8, 2.8)
-tile_map_data = PackedByteArray("AAAfADgAAAADADQAAAAfADkAAAADADUAAAAfADoAAAADADYAAAAfADsAAAADADcAAAAgADgAAAAEADQAAAAgADkAAAAEADUAAAAgADoAAAAEADYAAAAgADsAAAAEADcAAAAhADgAAAAFADQAAAAhADkAAAAFADUAAAAhADoAAAAFADYAAAAhADsAAAAFADcAAAAiADgAAAAGADQAAAAiADkAAAAGADUAAAAiADoAAAAGADYAAAAiADsAAAAGADcAAAAjADgAAAAHADQAAAAjADkAAAAHADUAAAAjADoAAAAHADYAAAAjADsAAAAHADcAAAAkADgAAAAIADQAAAAkADkAAAAIADUAAAAkADoAAAAIADYAAAAkADsAAAAIADcAAABDABsAAAADADQAAABDABwAAAADADUAAABDAB0AAAADADYAAABDAB4AAAADADcAAABEABsAAAAEADQAAABEABwAAAAEADUAAABEAB0AAAAEADYAAABEAB4AAAAEADcAAABFABsAAAAFADQAAABFABwAAAAFADUAAABFAB0AAAAFADYAAABFAB4AAAAFADcAAABGABsAAAAGADQAAABGABwAAAAGADUAAABGAB0AAAAGADYAAABGAB4AAAAGADcAAABHABsAAAAHADQAAABHABwAAAAHADUAAABHAB0AAAAHADYAAABHAB4AAAAHADcAAABIABsAAAAIADQAAABIABwAAAAIADUAAABIAB0AAAAIADYAAABIAB4AAAAIADcAAAAKABcAAAAGADgAAAALABcAAAAHADgAAAAMABcAAAAIADgAAAANABcAAAAJADgAAAALABMAAAAGADgAAAALABQAAAAGADkAAAALABUAAAAGADoAAAALABYAAAAGADsAAAAMABMAAAAHADgAAAAMABQAAAAHADkAAAAMABUAAAAHADoAAAAMABYAAAAHADsAAAANABMAAAAIADgAAAANABQAAAAIADkAAAANABUAAAAIADoAAAANABYAAAAIADsAAAAOABMAAAAJADgAAAAOABQAAAAJADkAAAAOABUAAAAJADoAAAAOABYAAAAJADsAAAA=")
-tile_set = SubResource("TileSet_f7v26")
-
-[node name="ExitArea" type="Area2D" parent="."]
-script = ExtResource("4_j53n3")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitArea"]
-position = Vector2(578, 965)
-shape = SubResource("RectangleShape2D_dnxn2")
+[node name="ShopScene" parent="." instance=ExtResource("7_013yk")]
+visible = false
+offset_left = 752.00006
+offset_top = 423.0
+offset_right = 752.00006
+offset_bottom = 423.0
 
 [connection signal="body_entered" from="ExitArea" to="ExitArea" method="_on_body_entered"]
 [connection signal="body_exited" from="ExitArea" to="ExitArea" method="_on_body_exited"]
