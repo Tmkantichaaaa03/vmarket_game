@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://c20ucc4bjaw48"]
+[gd_scene load_steps=8 format=3 uid="uid://c20ucc4bjaw48"]
 
 [ext_resource type="Script" uid="uid://ci87ih0n3tpcl" path="res://vmarket_game/shop.gd" id="1_1ushs"]
 [ext_resource type="Texture2D" uid="uid://ls3nwnq35im4" path="res://vmarket_game/image/สีดำ.jpg" id="1_y3wvr"]
@@ -6,6 +6,7 @@
 [ext_resource type="FontFile" uid="uid://iil8kvo82vev" path="res://vmarket_game/PSLCD3310.ttf" id="3_2238l"]
 [ext_resource type="Texture2D" uid="uid://b8tcsqr00ahc1" path="res://vmarket_game/image/ลูกศรย้อน.png" id="4_6y3e6"]
 [ext_resource type="Texture2D" uid="uid://dnxrk5leogtfi" path="res://vmarket_game/image/กล่องใส่รูป.png" id="5_jn4x2"]
+[ext_resource type="Texture2D" uid="uid://d2wgr1coiq424" path="res://vmarket_game/Pokecut_1768181134498.png" id="7_2238l"]
 
 [node name="shop" type="Control"]
 layout_mode = 3
@@ -69,4 +70,18 @@ offset_top = 219.0
 offset_right = 1592.0
 offset_bottom = 372.0
 
+[node name="TextureButton2" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.12200001
+anchor_bottom = 0.044000003
+offset_left = 1618.0
+offset_top = 848.0
+offset_right = 1471.76
+offset_bottom = 880.48
+texture_normal = ExtResource("7_2238l")
+ignore_texture_size = true
+stretch_mode = 0
+
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]
