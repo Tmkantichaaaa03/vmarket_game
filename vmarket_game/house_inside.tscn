@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=4 uid="uid://bpcbh4wqerr0h"]
+[gd_scene format=4 uid="uid://bpcbh4wqerr0h"]
 
 [ext_resource type="PackedScene" uid="uid://c231oiy5grhlk" path="res://vmarket_game/Player.tscn" id="1_1a4tb"]
 [ext_resource type="Script" uid="uid://coxrf0uaisp3i" path="res://vmarket_game/house_inside.gd" id="1_013yk"]
@@ -7,7 +7,7 @@
 [ext_resource type="Script" uid="uid://c18a21wdmycce" path="res://vmarket_game/exit_area.gd" id="4_j53n3"]
 [ext_resource type="Texture2D" uid="uid://crsr4aecb54he" path="res://vmarket_game/Alex_idle_anim_16x16.png" id="5_gxb5d"]
 [ext_resource type="Script" uid="uid://bamp1exqo2jac" path="res://vmarket_game/area_2d.gd" id="5_m7w8g"]
-[ext_resource type="PackedScene" uid="uid://0i6fjhxu0v03" path="res://vmarket_game/shop_scene.tscn" id="7_013yk"]
+[ext_resource type="PackedScene" uid="uid://cvxngy0jrgv7d" path="res://vmarket_game/shop_scene.tscn" id="7_013yk"]
 [ext_resource type="Script" uid="uid://bcip8kd1wb3kk" path="res://vmarket_game/buy.gd" id="10_6arde"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c33rj"]
@@ -21851,98 +21851,98 @@ sources/0 = SubResource("TileSetAtlasSource_gxb5d")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6arde"]
 size = Vector2(351, 104.75)
 
-[node name="house_inside" type="Node2D"]
+[node name="house_inside" type="Node2D" unique_id=1259598684]
 script = ExtResource("1_013yk")
 
-[node name="01" type="Sprite2D" parent="."]
+[node name="01" type="Sprite2D" parent="." unique_id=608470894]
 position = Vector2(966, 545)
 scale = Vector2(1.5334799, 0.92780185)
 texture = ExtResource("1_c33rj")
 
-[node name="wall" type="StaticBody2D" parent="."]
+[node name="wall" type="StaticBody2D" parent="." unique_id=1428131497]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="wall"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wall" unique_id=1066589422]
 position = Vector2(1105, 102)
 shape = SubResource("RectangleShape2D_c33rj")
 
-[node name="wall2" type="StaticBody2D" parent="."]
+[node name="wall2" type="StaticBody2D" parent="." unique_id=186810974]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="wall2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wall2" unique_id=85249428]
 position = Vector2(222.75, 965)
 shape = SubResource("RectangleShape2D_cmtxs")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1851538089]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1813228248]
 position = Vector2(115, 492)
 shape = SubResource("RectangleShape2D_j53n3")
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=26789505]
 position = Vector2(825, 959)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1271336841]
 position = Vector2(423, 21)
 shape = SubResource("RectangleShape2D_gxb5d")
 
-[node name="TileMapLayer2" type="TileMapLayer" parent="."]
+[node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=859245930]
 scale = Vector2(2, 2)
 tile_map_data = PackedByteArray("AAAyAA0AAAA0AGEAAAAyAA4AAAA0AGIAAAAyAA8AAAA0AGMAAAAzAA0AAAA1AGEAAAAzAA4AAAA1AGIAAAAzAA8AAAA1AGMAAAAwAA0AAAA0AGEAAAAwAA4AAAA0AGIAAAAwAA8AAAA0AGMAAAAxAA0AAAA1AGEAAAAxAA4AAAA1AGIAAAAxAA8AAAA1AGMAAAAlAA4AAAAyAGQAAAAlAA8AAAAyAGUAAAAmAA4AAAAzAGQAAAAmAA8AAAAxAGUAAAAnAA4AAAAyAGQAAAAnAA8AAAAyAGUAAAAoAA4AAAAzAGQAAAAjAA4AAAAwAGQAAAAjAA8AAAAwAGUAAAAkAA4AAAAxAGQAAAAkAA8AAAAxAGUAAAAQABcAAAAcADgAAAAQABgAAAAcADkAAAAQABkAAAAcADoAAAARABcAAAAdADgAAAARABgAAAAdADkAAAARABkAAAAdADoAAAARABoAAAAdADsAAAASABgAAAAeADkAAAASABkAAAAeADoAAAASABoAAAAeADsAAAATABgAAAAfADkAAAATABkAAAAfADoAAAA=")
 tile_set = SubResource("TileSet_j53n3")
 
-[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+[node name="StaticBody2D3" type="StaticBody2D" parent="." unique_id=1841871111]
 position = Vector2(1783, 203)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3" unique_id=1733502056]
 position = Vector2(-5, 325.5)
 shape = SubResource("RectangleShape2D_f7v26")
 
-[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+[node name="StaticBody2D4" type="StaticBody2D" parent="." unique_id=100407303]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4" unique_id=1423782119]
 position = Vector2(1407.625, 321.625)
 shape = SubResource("RectangleShape2D_m7w8g")
 
-[node name="StaticBody2D5" type="StaticBody2D" parent="."]
+[node name="StaticBody2D5" type="StaticBody2D" parent="." unique_id=1498819791]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5" unique_id=624105950]
 shape = SubResource("SegmentShape2D_cmtxs")
 
-[node name="StaticBody2D6" type="StaticBody2D" parent="."]
+[node name="StaticBody2D6" type="StaticBody2D" parent="." unique_id=927271408]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6" unique_id=1851586019]
 position = Vector2(881, 827)
 shape = SubResource("CapsuleShape2D_cmtxs")
 
-[node name="StaticBody2D7" type="StaticBody2D" parent="."]
+[node name="StaticBody2D7" type="StaticBody2D" parent="." unique_id=1379168959]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7" unique_id=1610678599]
 position = Vector2(1159, 825)
 shape = SubResource("CapsuleShape2D_j53n3")
 
-[node name="StaticBody2D8" type="StaticBody2D" parent="."]
+[node name="StaticBody2D8" type="StaticBody2D" parent="." unique_id=1260078028]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D8"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D8" unique_id=1653061204]
 position = Vector2(454, 783)
 shape = SubResource("SegmentShape2D_j53n3")
 
-[node name="ExitArea" type="Area2D" parent="."]
+[node name="ExitArea" type="Area2D" parent="." unique_id=2047741344]
 script = ExtResource("4_j53n3")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitArea" unique_id=131144932]
 position = Vector2(578, 965)
 shape = SubResource("RectangleShape2D_dnxn2")
 
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=550290026]
 texture_filter = 1
 position = Vector2(-2500, -260)
 scale = Vector2(3, 3)
 tile_map_data = PackedByteArray("AABLAAgAAAAUAEsAAABLAAkAAAAUAEwAAABLAAoAAAA/ADwAAABLAAsAAAA/AD0AAABMAAgAAAAVAEsAAABMAAkAAAAVAEwAAABMAAoAAAAVAE0AAABMAAsAAAAVAE4AAABNAAgAAAAWAEsAAABNAAkAAAAWAEwAAABNAAoAAAAWAE0AAABNAAsAAAAWAE4AAABOAAgAAAAXAEsAAABOAAkAAAAXAEwAAABOAAoAAAAXAE0AAABOAAsAAAAXAE4AAABPAAgAAAAYAEsAAABPAAkAAAAYAEwAAABPAAoAAAAYAE0AAABPAAsAAAAYAE4AAABQAAgAAAAZAEsAAABQAAkAAAAZAEwAAABQAAoAAAAZAE0AAABQAAsAAAAZAE4AAABRAAgAAAAaAEsAAABRAAkAAAAaAEwAAABRAAoAAAAaAE0AAABRAAsAAAAaAE4AAABSAAgAAAAbAEsAAABSAAkAAAAbAEwAAABSAAoAAAAbAE0AAABSAAsAAAAbAE4AAABTAAgAAAAcAEsAAABTAAkAAAAcAEwAAABTAAoAAAAcAE0AAABTAAsAAAAcAE4AAABUAAgAAAAdAEsAAABUAAkAAAAdAEwAAABUAAoAAAAdAE0AAABUAAsAAAAdAE4AAABVAAgAAAAeAEsAAABVAAkAAAA3AD0AAABWAAgAAAAfAEsAAABWAAkAAAA4AD0AAABFABQAAAAKAGMAAABFABUAAAAKAGQAAABFABYAAAAKAGUAAABFABcAAAAKAGYAAABFABgAAAAKAGcAAABGABQAAAALAGMAAABGABUAAAALAGQAAABGABYAAAALAGUAAABGABcAAAALAGYAAABGABgAAAALAGcAAABHABQAAAAMAGMAAABHABUAAAAMAGQAAABHABYAAAAMAGUAAABHABcAAAAMAGYAAABHABgAAAAMAGcAAAA8AAYAAAAKADAAAAA9AAYAAAALADAAAAA+AAYAAAAMADAAAAA/AAYAAAANADAAAABAAAYAAAAOADAAAABAAAcAAAAOADEAAABAAAgAAAAOADIAAABBAAcAAAAHADEAAABBAAgAAAAHADIAAABCAAcAAAAIADEAAABCAAgAAAAIADIAAABNABQAAAA8AE8AAABNABUAAAA8AFAAAABNABYAAAA8AFEAAABNABcAAAA8AFIAAABOABQAAAA9AE8AAABOABUAAAA9AFAAAABOABYAAAA9AFEAAABOABcAAAA9AFIAAABPAA4AAAAcAGoAAABPAA8AAAAcAGsAAABPABAAAAAcAGwAAABQAA4AAAAdAGoAAABQAA8AAAAdAGsAAABQABAAAAAdAGwAAABRAA4AAAAeAGoAAABRAA8AAAAeAGsAAABRABAAAAAeAGwAAABSAA4AAAAfAGoAAABSAA8AAAAfAGsAAABSABAAAAAfAGwAAABTAA4AAAAsAFoAAABTAA8AAAAsAFsAAABTABAAAAAsAFwAAABTABEAAAAsAF0AAABUAA4AAAAtAFoAAABUAA8AAAAtAFsAAABUABAAAAAtAFwAAABUABEAAAAtAF0AAABVAA4AAAAuAFoAAABVAA8AAAAuAFsAAABVABAAAAAuAFwAAABVABEAAAAuAF0AAABWABAAAAAvAFwAAABWABEAAAAvAF0AAABLAA4AAAAsAFoAAABLAA8AAAAsAFsAAABLABAAAAAsAFwAAABMAA4AAAAtAFoAAABMAA8AAAAtAFsAAABMABAAAAAtAFwAAABMABEAAAAtAF0AAABNAA4AAAAuAFoAAABNAA8AAAAuAFsAAABNABAAAAAuAFwAAABNABEAAAAuAF0AAABOAA4AAAAvAFoAAABOAA8AAAAvAFsAAABOABAAAAAvAFwAAABOABEAAAAvAF0AAABDAAYAAAA6AFsAAABDAAcAAAA6AFwAAABDAAgAAAA6AF0AAABDAAkAAAA6AF4AAABEAAYAAAA7AFsAAABEAAcAAAA7AFwAAABEAAgAAAA7AF0AAABEAAkAAAA7AF4AAABFAAYAAAA8AFsAAABFAAcAAAA8AFwAAABFAAgAAAA8AF0AAABFAAkAAAA8AF4AAABGAAYAAAA9AFsAAABGAAcAAAA9AFwAAABGAAgAAAA9AF0AAABGAAkAAAA9AF4AAABKABQAAAAHAGMAAABKABUAAAAHAGQAAABKABYAAAAHAGUAAABKABcAAAAHAGYAAABKABgAAAAHAGcAAABLABMAAAAIAGIAAABLABQAAAAIAGMAAABLABUAAAAIAGQAAABLABYAAAAIAGUAAABLABcAAAAIAGYAAABLABgAAAAIAGcAAABMABMAAAAJAGIAAABMABQAAAAJAGMAAABMABUAAAAJAGQAAABMABYAAAAJAGUAAABMABcAAAAJAGYAAABMABgAAAAJAGcAAAA8AAcAAAAKADEAAAA8AAgAAAAKADIAAAA8AAkAAAAKADMAAAA9AAcAAAALADEAAAA9AAgAAAALADIAAAA9AAkAAAALADMAAAA+AAcAAAAMADEAAAA+AAgAAAAMADIAAAA+AAkAAAAMADMAAAA/AAcAAAANADEAAAA/AAgAAAANADIAAAA/AAkAAAANADMAAABAAAkAAAAOADMAAAA9ABQAAAAiADgAAAA9ABUAAAAiADkAAAA9ABYAAAAiADoAAAA9ABcAAAAiADsAAAA+ABQAAAAjADgAAAA+ABUAAAAjADkAAAA+ABYAAAAjADoAAAA+ABcAAAAjADsAAAA/ABQAAAAkADgAAAA/ABUAAAAkADkAAAA/ABYAAAAkADoAAAA/ABcAAAAkADsAAABAABQAAAAlADgAAABAABUAAAAlADkAAABAABYAAAAlADoAAABAABcAAAAlADsAAABBABQAAAAmADgAAABBABUAAAAmADkAAABBABYAAAAmADoAAABBABcAAAAmADsAAABCABQAAAAnADgAAABCABUAAAAnADkAAABCABYAAAAnADoAAABCABcAAAAnADsAAABHAAYAAAA8ADQAAABHAAcAAAA8ADUAAABHAAgAAAA8ADYAAABHAAkAAAA8ADcAAABIAAcAAAA9ADUAAABIAAgAAAA9ADYAAABIAAkAAAA9ADcAAABJAAcAAAA+ADUAAABJAAgAAAA+ADYAAABJAAkAAAA+ADcAAABKAAYAAAA/ADQAAABKAAcAAAA/ADUAAABKAAgAAAA/ADYAAABKAAkAAAA/ADcAAABIAAoAAAA8ADwAAABIAAsAAAA8AD0AAABJAAoAAAA9ADwAAABJAAsAAAA9AD0AAABJAAwAAAA9ADwAAABJAA0AAAA9AD0AAABKAAoAAAA+ADwAAABKAAsAAAA+AD0AAABKAAwAAAA+ADwAAABKAA0AAAA+AD0AAABIAAwAAAA8ADwAAABIAA0AAAA8AD0AAABJAA4AAAA9AD4AAABJAA8AAAA9AD8AAABKAA4AAAA+AD4AAABKAA8AAAA+AD8AAABLAAwAAAA/ADwAAABLAA0AAAA/AD0AAABVAAoAAAA3AD4AAABVAAsAAAA3AD8AAABVAAwAAAA3AEAAAABWAAoAAAA4AD4AAABWAAsAAAA3AD0AAABWAAwAAAA3AD4AAABWAA0AAAA3AD8AAABWAA4AAAA3AEAAAABXAAsAAAA4AD0AAABXAAwAAAA4AD4AAABXAA0AAAA4AD8AAABXAA4AAAA4AEAAAABWAA8AAAAvAFsAAABLABEAAAAsAF0AAAA=")
 tile_set = SubResource("TileSet_gxb5d")
 
-[node name="NPC" type="Node2D" parent="."]
+[node name="NPC" type="Node2D" parent="." unique_id=1820019728]
 position = Vector2(538, -98)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="NPC"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="NPC" unique_id=1615069535]
 position = Vector2(700, 452)
 scale = Vector2(5.9999986, 5.312499)
 sprite_frames = SubResource("SpriteFrames_ol0wc")
@@ -21950,47 +21950,47 @@ animation = &"walk"
 autoplay = "walk"
 frame_progress = 0.9835643
 
-[node name="Area2D" type="Area2D" parent="NPC"]
+[node name="Area2D" type="Area2D" parent="NPC" unique_id=596794279]
 script = ExtResource("5_m7w8g")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC/Area2D" unique_id=144179800]
 texture_filter = 1
 position = Vector2(702.00006, 479)
 scale = Vector2(0.99999994, 1)
 shape = SubResource("CapsuleShape2D_7tqsv")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_1a4tb")]
+[node name="CharacterBody2D" parent="." unique_id=415504998 instance=ExtResource("1_1a4tb")]
 position = Vector2(582, 913)
 
-[node name="Camera2D2" type="Camera2D" parent="CharacterBody2D"]
+[node name="Camera2D3" type="Camera2D" parent="CharacterBody2D" unique_id=1003623467]
 position = Vector2(173, 36)
 position_smoothing_enabled = true
 rotation_smoothing_enabled = true
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1629527310]
 position = Vector2(-11, 61)
 shape = SubResource("RectangleShape2D_013yk")
 
-[node name="ShopScene" parent="." instance=ExtResource("7_013yk")]
+[node name="ShopScene" parent="." unique_id=1964441549 instance=ExtResource("7_013yk")]
 visible = false
 offset_left = 752.00006
 offset_top = 423.0
 offset_right = 752.00006
 offset_bottom = 423.0
 
-[node name="TileMapLayer3" type="TileMapLayer" parent="."]
+[node name="TileMapLayer3" type="TileMapLayer" parent="." unique_id=456975746]
 position = Vector2(7.9999995, 0)
 scale = Vector2(2.8, 2.8)
 tile_map_data = PackedByteArray("AAAfADgAAAADADQAAAAfADkAAAADADUAAAAfADoAAAADADYAAAAfADsAAAADADcAAAAgADgAAAAEADQAAAAgADkAAAAEADUAAAAgADoAAAAEADYAAAAgADsAAAAEADcAAAAhADgAAAAFADQAAAAhADkAAAAFADUAAAAhADoAAAAFADYAAAAhADsAAAAFADcAAAAiADgAAAAGADQAAAAiADkAAAAGADUAAAAiADoAAAAGADYAAAAiADsAAAAGADcAAAAjADgAAAAHADQAAAAjADkAAAAHADUAAAAjADoAAAAHADYAAAAjADsAAAAHADcAAAAkADgAAAAIADQAAAAkADkAAAAIADUAAAAkADoAAAAIADYAAAAkADsAAAAIADcAAABDABsAAAADADQAAABEABsAAAAEADQAAABFABsAAAAFADQAAABGABsAAAAGADQAAABIABsAAAAIADQAAAAKABcAAAAGADgAAAALABMAAAAGADgAAAAMABMAAAAHADgAAABDABwAAAADADUAAABEABwAAAAEADUAAABEAB0AAAAEADYAAABFAB0AAAAFADYAAABFAB4AAAAFADcAAABEAB4AAAAEADcAAABDAB0AAAADADYAAABDAB4AAAADADcAAABFABwAAAAFADUAAABGABwAAAAGADUAAABGAB0AAAAGADYAAABHAB4AAAAHADcAAABGAB4AAAAGADcAAABHABwAAAAHADUAAABHAB0AAAAHADYAAABIAB0AAAAIADYAAABHABsAAAAHADQAAABIABwAAAAIADUAAABIAB4AAAAIADcAAAAOABYAAAAJADsAAAAOABUAAAAJADoAAAAOABQAAAAJADkAAAAOABMAAAAJADgAAAANABQAAAAIADkAAAANABMAAAAIADgAAAANABUAAAAIADoAAAANABYAAAAIADsAAAANABcAAAAJADgAAAAMABYAAAAHADsAAAAMABcAAAAIADgAAAAMABUAAAAHADoAAAAMABQAAAAHADkAAAALABcAAAAHADgAAAALABYAAAAGADsAAAALABUAAAAGADoAAAALABQAAAAGADkAAAA=")
 tile_set = SubResource("TileSet_f7v26")
 
-[node name="Counter" type="Node2D" parent="."]
+[node name="Counter" type="Node2D" parent="." unique_id=272750777]
 
-[node name="buy" type="Area2D" parent="Counter"]
+[node name="buy" type="Area2D" parent="Counter" unique_id=1956960741]
 position = Vector2(-8, 2)
 script = ExtResource("10_6arde")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Counter/buy"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Counter/buy" unique_id=514455075]
 position = Vector2(1396, 523)
 shape = SubResource("RectangleShape2D_6arde")
 
