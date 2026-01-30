@@ -1,4 +1,4 @@
-[gd_scene load_steps=108 format=3 uid="uid://c231oiy5grhlk"]
+[gd_scene format=3 uid="uid://c231oiy5grhlk"]
 
 [ext_resource type="Script" uid="uid://dlcgo2bc7y34y" path="res://vmarket_game/scripts/character_body_2d.gd" id="1_4x6r1"]
 [ext_resource type="Texture2D" uid="uid://bvywjjmje1pm4" path="res://vmarket_game/Adam_idle_anim_16x16.png" id="2_4ttyg"]
@@ -769,23 +769,17 @@ animations = [{
 radius = 18.0
 height = 64.0
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=419996198]
 script = ExtResource("1_4x6r1")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1356682805]
 position = Vector2(-9.3749695, 50.249985)
 scale = Vector2(4.2968764, 3.1406245)
 sprite_frames = SubResource("SpriteFrames_76k8f")
-animation = &"Bob_walk_up"
+animation = &"Bob_walk_side"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=159831357]
 position = Vector2(-10, 62)
 shape = SubResource("CapsuleShape2D_mqmmo")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-limit_left = 0
-limit_top = 0
-limit_right = 2000
-limit_bottom = 1100
-position_smoothing_enabled = true
-rotation_smoothing_enabled = true
+[node name="Camera2D2" type="Camera2D" parent="." unique_id=863549864]
