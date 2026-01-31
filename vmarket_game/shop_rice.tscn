@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://bmu1wyetajo2n"]
+
+[ext_resource type="Texture2D" uid="uid://bc81vjidk0vy5" path="res://vmarket_game/map/Tilesets/ตัด.png" id="1_x5873"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x5873"]
+size = Vector2(336.25, 108)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_seq1j"]
+size = Vector2(357, 267.125)
+
+[node name="Shop_Rice" type="Node2D" unique_id=1961649118]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1293968405]
+position = Vector2(321, 184)
+texture = ExtResource("1_x5873")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=291144434]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=523825243]
+position = Vector2(320, 261)
+shape = SubResource("RectangleShape2D_x5873")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1749683615]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=782246551]
+visible = false
+position = Vector2(328.5, 198.5625)
+shape = SubResource("RectangleShape2D_seq1j")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=38648456]
