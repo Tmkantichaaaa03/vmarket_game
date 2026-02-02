@@ -1,16 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://vb88icyv4agh"]
+[gd_scene format=3 uid="uid://vb88icyv4agh"]
 
 [ext_resource type="Script" uid="uid://cjwngsl1mrwex" path="res://vmarket_game/shipping_address.gd" id="1_ele3p"]
-[ext_resource type="Texture2D" uid="uid://ls3nwnq35im4" path="res://vmarket_game/image/สีดำ.jpg" id="1_lewu3"]
+[ext_resource type="Texture2D" uid="uid://dus1dus681mxo" path="res://vmarket_game/map/ของตกแต่ง/Gemini_Generated_Image_6bsbq26bsbq26bsb.png" id="2_7j2jn"]
 [ext_resource type="Texture2D" uid="uid://chb1i430on2fb" path="res://vmarket_game/image/Pokecut_1768163041145.png" id="2_qw60h"]
-[ext_resource type="Texture2D" uid="uid://baotrx1p03rsy" path="res://vmarket_game/image/กรอบ5.png" id="4_nqofi"]
-[ext_resource type="Texture2D" uid="uid://dnxrk5leogtfi" path="res://vmarket_game/image/กล่องใส่รูป.png" id="5_cb5jo"]
-[ext_resource type="FontFile" uid="uid://iil8kvo82vev" path="res://vmarket_game/PSLCD3310.ttf" id="5_ele3p"]
-[ext_resource type="Texture2D" uid="uid://dhpch23cwo5ou" path="res://vmarket_game/image/กรอบข้อความ.png" id="7_oe3de"]
-[ext_resource type="Texture2D" uid="uid://pe5rsf6n1kak" path="res://vmarket_game/image/ถูก.png" id="8_1w88f"]
-[ext_resource type="Texture2D" uid="uid://dg8i3ps1tsjvt" path="res://vmarket_game/ย้อน1.png" id="9_oe3de"]
+[ext_resource type="Texture2D" uid="uid://b7rlciysfwuxd" path="res://vmarket_game/map/UI/Pokecut_1770020736309.png" id="4_7j2jn"]
 
-[node name="Shipping_address" type="Control"]
+[node name="Shipping_address" type="Control" unique_id=1622568055]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -24,90 +19,17 @@ grow_vertical = 2
 script = ExtResource("1_ele3p")
 metadata/_edit_lock_ = true
 
-[node name="สีดำ" type="Sprite2D" parent="."]
-position = Vector2(1011.25, 561.75)
-scale = Vector2(6.6518154, 2.7864196)
-texture = ExtResource("1_lewu3")
-metadata/_edit_lock_ = true
+[node name="GeminiGeneratedImage6Bsbq26Bsbq26Bsb" type="Sprite2D" parent="." unique_id=961525674]
+position = Vector2(1067, 587)
+scale = Vector2(3.2076938, 1.7202064)
+texture = ExtResource("2_7j2jn")
 
-[node name="Pokecut1768163041145" type="Sprite2D" parent="."]
-position = Vector2(1013, 529)
-scale = Vector2(1.5686141, 1.528409)
+[node name="Pokecut1768163041145" type="Sprite2D" parent="." unique_id=1135568359]
+position = Vector2(997, 516)
+scale = Vector2(1.4663723, 1.3948864)
 texture = ExtResource("2_qw60h")
-metadata/_edit_lock_ = true
 
-[node name="กรอบ5" type="Sprite2D" parent="."]
-position = Vector2(609, 249)
-scale = Vector2(0.30885422, 0.5080936)
-texture = ExtResource("4_nqofi")
-
-[node name="Label" type="Label" parent="กรอบ5"]
-offset_left = -1346.9137
-offset_top = -114.15221
-offset_right = 1201.214
-offset_bottom = 101.84779
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("5_ele3p")
-theme_override_font_sizes/font_size = 150
-text = "ที่อยู่จัดส่ง"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="กล่องใส่รูป" type="Sprite2D" parent="."]
-position = Vector2(623, 566)
-scale = Vector2(1.5877343, 1.1047701)
-texture = ExtResource("5_cb5jo")
-
-[node name="กรอบข้อความ" type="Sprite2D" parent="."]
-position = Vector2(613.00006, 864.00006)
-scale = Vector2(0.4534483, 0.37301573)
-texture = ExtResource("7_oe3de")
-
-[node name="Label" type="Label" parent="กรอบข้อความ"]
-offset_left = -392.54764
-offset_top = -96.510765
-offset_right = 524.8668
-offset_bottom = 47.489235
-theme_override_fonts/font = ExtResource("5_ele3p")
-theme_override_font_sizes/font_size = 100
-text = "ช่องทางชำระเงิน"
-
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_left = 411.0
-offset_top = 921.0
-offset_right = 712.0
-offset_bottom = 1045.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("5_ele3p")
-theme_override_font_sizes/font_size = 40
-text = "เก็บเงินปลายทาง"
-
-[node name="ถูก" type="Sprite2D" parent="."]
-position = Vector2(766, 957)
-scale = Vector2(0.19978628, 0.15235062)
-texture = ExtResource("8_1w88f")
-
-[node name="TextureButton" type="TextureButton" parent="."]
-layout_mode = 0
-offset_left = 273.0
-offset_top = 153.0
-offset_right = 360.1713
-offset_bottom = 225.56308
-rotation = 3.1415927
-texture_normal = ExtResource("9_oe3de")
-ignore_texture_size = true
-stretch_mode = 0
-
-[node name="TextureButton2" type="TextureButton" parent="."]
-layout_mode = 0
-offset_left = 1716.0
-offset_top = 891.0
-offset_right = 1792.0
-offset_bottom = 966.0
-texture_normal = ExtResource("9_oe3de")
-ignore_texture_size = true
-stretch_mode = 0
-
-[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
-[connection signal="pressed" from="TextureButton2" to="." method="_on_texture_button_2_pressed"]
+[node name="Pokecut1770020736309" type="Sprite2D" parent="." unique_id=1567289377]
+position = Vector2(1691, 164)
+scale = Vector2(0.15, 0.13)
+texture = ExtResource("4_7j2jn")
