@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5053n522b2te"
-path="res://.godot/imported/615111196_2270856410068306_2064870601766184305_n.jpg-cbe7f15c8e0f7b01a11ef506383c96a7.ctex"
+uid="uid://blh7y2xjxn1ac"
+path="res://.godot/imported/โต๊ะ.png-8ea320da9d3025d653d3210e23cf0bb0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://vmarket_game/`อาหาร/615111196_2270856410068306_2064870601766184305_n.jpg"
-dest_files=["res://.godot/imported/615111196_2270856410068306_2064870601766184305_n.jpg-cbe7f15c8e0f7b01a11ef506383c96a7.ctex"]
+source_file="res://vmarket_game/`อาหาร/อาหาร/โต๊ะ.png"
+dest_files=["res://.godot/imported/โต๊ะ.png-8ea320da9d3025d653d3210e23cf0bb0.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dklxt5n1dwd8t"
-path="res://.godot/imported/615210325_2270855920068355_4367832104693776716_n.jpg-3b94032b392d710fd34bc76397dcad07.ctex"
+uid="uid://huauk4oosdy5"
+path="res://.godot/imported/ปลาป๋อง.png-92d89d183b8d91e1c8de55f7cb76dd9c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://vmarket_game/`อาหาร/615210325_2270855920068355_4367832104693776716_n.jpg"
-dest_files=["res://.godot/imported/615210325_2270855920068355_4367832104693776716_n.jpg-3b94032b392d710fd34bc76397dcad07.ctex"]
+source_file="res://vmarket_game/`อาหาร/อาหาร/ปลาป๋อง.png"
+dest_files=["res://.godot/imported/ปลาป๋อง.png-92d89d183b8d91e1c8de55f7cb76dd9c.ctex"]
 
 [params]
 

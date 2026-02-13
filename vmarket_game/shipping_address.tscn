@@ -4,7 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://dus1dus681mxo" path="res://vmarket_game/map/ของตกแต่ง/Gemini_Generated_Image_6bsbq26bsbq26bsb.png" id="2_7j2jn"]
 [ext_resource type="Texture2D" uid="uid://chb1i430on2fb" path="res://vmarket_game/image/Pokecut_1768163041145.png" id="2_qw60h"]
 [ext_resource type="Texture2D" uid="uid://b7rlciysfwuxd" path="res://vmarket_game/map/UI/Pokecut_1770020736309.png" id="4_7j2jn"]
-[ext_resource type="Texture2D" uid="uid://cipvuxe3o1kau" path="res://vmarket_game/map/UI/Buttons.png" id="5_lewu3"]
 
 [node name="Shipping_address" type="Control" unique_id=1622568055]
 layout_mode = 3
@@ -34,7 +33,3 @@ texture = ExtResource("2_qw60h")
 position = Vector2(1691, 164)
 scale = Vector2(0.15, 0.13)
 texture = ExtResource("4_7j2jn")
-
-[node name="Buttons" type="Sprite2D" parent="." unique_id=1918726793]
-position = Vector2(929, 350)
-texture = ExtResource("5_lewu3")
