@@ -8,3 +8,10 @@ var selected_avatar_index: int = 1
 
 
 var spawn_name: String = ""
+
+
+var current_seller_id = -1
+# ================================
+# PRODUCT ที่เลือก
+# ================================
+var selected_product = {}

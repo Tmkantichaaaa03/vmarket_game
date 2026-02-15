@@ -33,3 +33,40 @@ texture = ExtResource("2_qw60h")
 position = Vector2(1691, 164)
 scale = Vector2(0.15, 0.13)
 texture = ExtResource("4_7j2jn")
+
+[node name="Image" type="TextureRect" parent="." unique_id=935924721]
+layout_mode = 0
+offset_left = 333.0
+offset_top = 121.0
+offset_right = 737.0
+offset_bottom = 481.0
+
+[node name="DetailImage" type="TextureRect" parent="." unique_id=2103353939]
+layout_mode = 0
+offset_left = 922.0
+offset_top = 561.0
+offset_right = 1240.0
+offset_bottom = 890.0
+
+[node name="NameLabel" type="Label" parent="." unique_id=670584300]
+layout_mode = 0
+offset_left = 327.0
+offset_top = 523.0
+offset_right = 903.0
+offset_bottom = 840.0
+theme_override_font_sizes/font_size = 50
+text = "ชื่อ"
+
+[node name="PriceLabel" type="Label" parent="." unique_id=919240963]
+layout_mode = 0
+offset_left = 687.0
+offset_top = 690.0
+offset_right = 914.0
+offset_bottom = 894.0
+
+[node name="DescLabel" type="Label" parent="." unique_id=1874967632]
+layout_mode = 0
+offset_left = 1226.0
+offset_top = 359.0
+offset_right = 1461.0
+offset_bottom = 557.0

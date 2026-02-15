@@ -4,10 +4,9 @@
 [ext_resource type="Script" uid="uid://chnhldvtxcq5h" path="res://vmarket_game/trade_ui.gd" id="1_cjkqt"]
 [ext_resource type="Texture2D" uid="uid://bqb5nni0mfh37" path="res://vmarket_game/map/ของตกแต่ง/Pokecut_1769890863907.png" id="2_qugby"]
 [ext_resource type="Texture2D" uid="uid://blh7y2xjxn1ac" path="res://vmarket_game/`อาหาร/อาหาร/โต๊ะ.png" id="6_ciwbw"]
-[ext_resource type="Texture2D" uid="uid://c4k57cmrtvxkj" path="res://vmarket_game/`อาหาร/อาหาร/กะเพรา.png" id="7_td10q"]
-[ext_resource type="Texture2D" uid="uid://bj8bmvhcptjrl" path="res://vmarket_game/`อาหาร/อาหาร/คะน้า.png" id="8_qugby"]
-[ext_resource type="Texture2D" uid="uid://huauk4oosdy5" path="res://vmarket_game/`อาหาร/อาหาร/ปลาป๋อง.png" id="9_qugby"]
+[ext_resource type="Texture2D" uid="uid://cvmailh15yt3" path="res://vmarket_game/`อาหาร/อาหาร/จาน.png" id="8_qugby"]
 [ext_resource type="Texture2D" uid="uid://djn2atj6gbhs2" path="res://vmarket_game/map/UI/Pokecut_1770019084345.png" id="12_cjkqt"]
+[ext_resource type="Texture2D" uid="uid://myxriiawft55" path="res://vmarket_game/image/ซ้าย.png" id="12_yy2by"]
 [ext_resource type="FontFile" uid="uid://iil8kvo82vev" path="res://vmarket_game/PSLCD3310.ttf" id="13_yy2by"]
 
 [node name="TradeUI" type="Control" unique_id=1823761003]
@@ -32,19 +31,18 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="GeminiGeneratedImage6Bsbq26Bsbq26Bsb" type="Sprite2D" parent="Panel" unique_id=936643813]
-position = Vector2(1015, 511)
+position = Vector2(965, 469.00003)
 scale = Vector2(2.044922, 1.1254883)
 texture = ExtResource("1_0n0py")
+metadata/_edit_lock_ = true
 
 [node name="Pokecut1769890863907" type="Sprite2D" parent="Panel" unique_id=2092574922]
-position = Vector2(1156, 329.99997)
+position = Vector2(989, 254.99998)
 scale = Vector2(0.40405282, 0.361084)
 texture = ExtResource("2_qugby")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="Panel" unique_id=1962278822]
-
 [node name="Pokecut1770019084345" type="Sprite2D" parent="Panel" unique_id=841021645]
-position = Vector2(860.75, 237.74998)
+position = Vector2(668, 224)
 scale = Vector2(0.50146484, 0.36767575)
 texture = ExtResource("12_cjkqt")
 
@@ -65,22 +63,155 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
+[node name="TotalLabel" type="Label" parent="Panel" unique_id=1420661287]
+layout_mode = 0
+offset_left = 1441.0
+offset_top = 869.0
+offset_right = 1728.0
+offset_bottom = 1060.0
+text = "Total: 0"
+
 [node name="โต๊ะ" type="Sprite2D" parent="." unique_id=381541266]
-position = Vector2(949.00006, 633)
-scale = Vector2(1.2358397, 1.1064453)
+position = Vector2(969.0001, 595.625)
+scale = Vector2(1.7890624, 1.3952638)
 texture = ExtResource("6_ciwbw")
 
-[node name="กะเพรา" type="Sprite2D" parent="." unique_id=679092597]
-position = Vector2(584, 533.00006)
-scale = Vector2(0.14296876, 0.120179676)
-texture = ExtResource("7_td10q")
+[node name="ซ้าย" type="Sprite2D" parent="." unique_id=2137919036]
+position = Vector2(212.00002, 779)
+scale = Vector2(0.89419466, 0.7623242)
+texture = ExtResource("12_yy2by")
 
-[node name="คะน้า" type="Sprite2D" parent="." unique_id=887882464]
-position = Vector2(757.00006, 535)
-scale = Vector2(0.16145834, 0.13738969)
-texture = ExtResource("8_qugby")
+[node name="Button" type="Button" parent="." unique_id=1889464301]
+layout_mode = 0
+offset_left = 1663.0
+offset_top = 913.0
+offset_right = 1770.0
+offset_bottom = 988.0
 
-[node name="ปลาป๋อง" type="Sprite2D" parent="." unique_id=1518414162]
-position = Vector2(939.1875, 541.49994)
-scale = Vector2(0.16292831, 0.13541658)
-texture = ExtResource("9_qugby")
+[node name="ItemLayer" type="Node2D" parent="." unique_id=1535876116]
+
+[node name="Slot1" type="Node2D" parent="ItemLayer" unique_id=2035275627]
+position = Vector2(694, 511)
+
+[node name="NameLabel" type="Label" parent="ItemLayer/Slot1" unique_id=909639878]
+offset_left = 54.0
+offset_top = 65.0
+offset_right = 94.0
+offset_bottom = 88.0
+
+[node name="PriceLabel" type="Label" parent="ItemLayer/Slot1" unique_id=214616685]
+offset_left = -69.0
+offset_top = 85.0
+offset_right = -29.0
+offset_bottom = 108.0
+
+[node name="Slot2" type="Node2D" parent="ItemLayer" unique_id=1518723348]
+position = Vector2(962, 511)
+
+[node name="NameLabel" type="Label" parent="ItemLayer/Slot2" unique_id=887236996]
+offset_left = 112.0
+offset_top = 134.0
+offset_right = 152.0
+offset_bottom = 157.0
+
+[node name="PriceLabel" type="Label" parent="ItemLayer/Slot2" unique_id=1063619349]
+offset_left = -65.0
+offset_top = 71.0
+offset_right = -25.0
+offset_bottom = 94.0
+
+[node name="Slot3" type="Node2D" parent="ItemLayer" unique_id=276226315]
+position = Vector2(1209, 511)
+
+[node name="NameLabel" type="Label" parent="ItemLayer/Slot3" unique_id=103986890]
+offset_left = 74.0
+offset_top = 104.0
+offset_right = 114.0
+offset_bottom = 127.0
+
+[node name="PriceLabel" type="Label" parent="ItemLayer/Slot3" unique_id=476750365]
+offset_left = -62.0
+offset_top = 101.0
+offset_right = -22.0
+offset_bottom = 124.0
+
+[node name="Slot4" type="Node2D" parent="ItemLayer" unique_id=865143945]
+position = Vector2(1466, 511)
+
+[node name="NameLabel" type="Label" parent="ItemLayer/Slot4" unique_id=3042672]
+offset_left = 61.0
+offset_top = 85.0
+offset_right = 101.0
+offset_bottom = 108.0
+
+[node name="PriceLabel" type="Label" parent="ItemLayer/Slot4" unique_id=309661220]
+offset_left = -79.0
+offset_top = 86.0
+offset_right = -39.0
+offset_bottom = 109.0
+
+[node name="Slot0" type="Node2D" parent="ItemLayer" unique_id=1455796703]
+position = Vector2(430, 512)
+
+[node name="NameLabel" type="Label" parent="ItemLayer/Slot0" unique_id=807978934]
+offset_left = 52.0
+offset_top = 78.0
+offset_right = 92.0
+offset_bottom = 101.0
+
+[node name="PriceLabel" type="Label" parent="ItemLayer/Slot0" unique_id=420549169]
+offset_left = -97.0
+offset_top = 86.0
+offset_right = -57.0
+offset_bottom = 109.0
+
+[node name="TextureButton" type="TextureButton" parent="ItemLayer" unique_id=87556150]
+offset_left = 284.0
+offset_top = 361.0
+offset_right = 584.0
+offset_bottom = 661.0
+texture_normal = ExtResource("8_qugby")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton2" type="TextureButton" parent="ItemLayer" unique_id=1398613576]
+offset_left = 546.0
+offset_top = 360.0
+offset_right = 846.0
+offset_bottom = 660.0
+texture_normal = ExtResource("8_qugby")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton3" type="TextureButton" parent="ItemLayer" unique_id=610340230]
+offset_left = 814.0
+offset_top = 360.0
+offset_right = 1114.0
+offset_bottom = 660.0
+texture_normal = ExtResource("8_qugby")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton4" type="TextureButton" parent="ItemLayer" unique_id=712470013]
+offset_left = 1061.0
+offset_top = 360.0
+offset_right = 1361.0
+offset_bottom = 660.0
+texture_normal = ExtResource("8_qugby")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton5" type="TextureButton" parent="ItemLayer" unique_id=407989986]
+offset_left = 1314.0
+offset_top = 360.0
+offset_right = 1614.0
+offset_bottom = 660.0
+texture_normal = ExtResource("8_qugby")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="HTTPRequest" type="HTTPRequest" parent="." unique_id=1830476747]
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="ItemLayer/TextureButton" to="." method="_on_item_pressed"]
+[connection signal="request_completed" from="HTTPRequest" to="." method="_on_http_request_request_completed"]

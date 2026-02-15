@@ -17,3 +17,7 @@ func update_day_night():
 		day_night.color = Color(0.8, 0.75, 0.6)   # เย็น
 	else:
 		day_night.color = Color(0.2, 0.2, 0.35)   # กลางคืน
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	pass # Replace with function body.

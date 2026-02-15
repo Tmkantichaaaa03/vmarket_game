@@ -23,45 +23,9 @@ scale = Vector2(1.258138, 1.0444337)
 texture = ExtResource("1_gmtl3")
 
 [node name="Pokecut1768163041145" type="Sprite2D" parent="." unique_id=1704530382]
-position = Vector2(1016, 488.00003)
+position = Vector2(1920, -324)
 scale = Vector2(1.3131794, 1.4417615)
 texture = ExtResource("2_m024s")
-
-[node name="Label" type="Label" parent="Pokecut1768163041145" unique_id=211935742]
-offset_left = 279.47437
-offset_top = -816.36255
-offset_right = 1337.9824
-offset_bottom = -291.36255
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_i5u3d")
-theme_override_font_sizes/font_size = 20
-text = "ขอบคุณสำหรับการสั่งซื้อของคุณ!
-
-คำสั่งซื้อของคุณได้รับการยืนยันเรียบร้อยแล้ว และขณะนี้อยู่ระหว่างการดำเนินการ
-
-จัดเตรียมสินค้า ทีมงานของเรากำลังดำเนินการอย่างดีที่สุดเพื่อให้สินค้าพร้อมสำหรับ
-
-การจัดส่งโดยเร็วที่สุด
-
-หากมีข้อสงสัยหรือต้องการความช่วยเหลือเพิ่มเติม กรุณาติดต่อฝ่ายบริการลูกค้าผ่าน 
-
-UNITRADE
-
-ขอขอบคุณที่ไว้วางใจเรา และโปรดรอรับสินค้าของคุณเร็ว ๆ นี้!
-
-ทีมงาน UNITRADE
-"
-vertical_alignment = 1
-
-[node name="Label2" type="Label" parent="Pokecut1768163041145" unique_id=1310470375]
-offset_left = -170.57837
-offset_top = -256.63052
-offset_right = 189.09277
-offset_bottom = -78.08807
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_i5u3d")
-theme_override_font_sizes/font_size = 30
-text = "เรียนลูกค้าผู้มีอุปการคุณ"
 
 [node name="TextureButton" type="TextureButton" parent="." unique_id=833524167]
 layout_mode = 0

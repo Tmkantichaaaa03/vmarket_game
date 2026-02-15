@@ -8,7 +8,7 @@ size = Vector2(336.25, 108)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_seq1j"]
 size = Vector2(357, 267.125)
 
-[node name="Shop_Rice" type="Node2D" unique_id=1961649118]
+[node name="Shop_clothes" type="Node2D" unique_id=1961649118]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1293968405]
 position = Vector2(321, 184)
@@ -26,5 +26,3 @@ shape = SubResource("RectangleShape2D_x5873")
 visible = false
 position = Vector2(328.5, 198.5625)
 shape = SubResource("RectangleShape2D_seq1j")
-
-[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=38648456]

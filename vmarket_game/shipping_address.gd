@@ -1,13 +1,24 @@
 extends Control
 
-func _ready() -> void:
-	pass 
+@onready var img = $Image
+@onready var detail_img = $DetailImage
+@onready var name_label = $NameLabel
+@onready var price_label = $PriceLabel
+@onready var desc_label = $DescLabel
 
-func _process(delta: float) -> void:
-	pass
 
-func _on_texture_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://vmarket_game/shop.tscn")
+func _ready():
 
-func _on_texture_button_2_pressed() -> void:
-	get_tree().change_scene_to_file("res://vmarket_game/thakyou.tscn")
+	if Global.selected_product == null:
+		print("No product selected")
+		return
+
+	var p = Global.selected_product
+
+	img.texture = p["image"]
+	name_label.text = str(p["name"])
+	price_label.text = "$" + str(p["price"])
+	desc_label.text = str(p["description"])
+
+	if p.has("detail_image") and p["detail_image"] != null:
+		detail_img.texture = p["detail_image"]
