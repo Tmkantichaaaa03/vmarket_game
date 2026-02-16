@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://c20ucc4bjaw48"]
+
+[ext_resource type="Script" uid="uid://ci87ih0n3tpcl" path="res://vmarket_game/shopConfirm.gd" id="1_650dr"]
+[ext_resource type="Texture2D" uid="uid://cwhs2n8rww8w0" path="res://vmarket_game/image/พื้นหลังหน้าแรกมืด.png" id="2_31wmx"]
+
+[node name="shopConfirm" type="Control" unique_id=1798606299]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -18.0
+offset_top = -16.0
+offset_right = -18.0
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_650dr")
+
+[node name="พื้นหลังหน้าแรกมืด" type="Sprite2D" parent="." unique_id=414191015]
+position = Vector2(985, 558)
+scale = Vector2(1.2950846, 1.0808107)
+texture = ExtResource("2_31wmx")
+
+[node name="UserLabel" type="Label" parent="." unique_id=689217610]
+layout_mode = 0
+offset_left = 278.0
+offset_top = 153.0
+offset_right = 684.0
+offset_bottom = 425.0
+text = "ชื่อข้อมูลuser"
+
+[node name="AddressLabel" type="Label" parent="." unique_id=684660423]
+layout_mode = 0
+offset_left = 283.0
+offset_top = 632.0
+offset_right = 677.0
+offset_bottom = 790.0
+text = "ที่อยู่"
+
+[node name="ItemsLabel" type="Label" parent="." unique_id=118980117]
+layout_mode = 0
+offset_left = 1095.0
+offset_top = 131.0
+offset_right = 1410.0
+offset_bottom = 353.0
+text = "รายการสินค้า"
+
+[node name="TotalLabel" type="Label" parent="." unique_id=273511465]
+layout_mode = 0
+offset_left = 1101.0
+offset_top = 425.0
+offset_right = 1367.0
+offset_bottom = 658.0
+text = "ราคารวมทั้งหมด"
+
+[node name="ConfirmButton" type="Button" parent="." unique_id=860177363]
+layout_mode = 0
+offset_left = 1700.0
+offset_top = 864.0
+offset_right = 1805.0
+offset_bottom = 954.0
+text = "ยืนยันการสั่งซื้อสินค้า"
+
+[node name="HTTPRequest" type="HTTPRequest" parent="." unique_id=1654040353]
+
+[connection signal="pressed" from="ConfirmButton" to="." method="_on_confirm_button_pressed"]
+[connection signal="request_completed" from="HTTPRequest" to="." method="_on_http_request_request_completed"]

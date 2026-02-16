@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://dus1dus681mxo" path="res://vmarket_game/map/ของตกแต่ง/Gemini_Generated_Image_6bsbq26bsbq26bsb.png" id="2_7j2jn"]
 [ext_resource type="Texture2D" uid="uid://chb1i430on2fb" path="res://vmarket_game/image/Pokecut_1768163041145.png" id="2_qw60h"]
 [ext_resource type="Texture2D" uid="uid://b7rlciysfwuxd" path="res://vmarket_game/map/UI/Pokecut_1770020736309.png" id="4_7j2jn"]
+[ext_resource type="Texture2D" uid="uid://wfxt15yub00m" path="res://vmarket_game/icon.svg" id="5_lewu3"]
+[ext_resource type="FontFile" uid="uid://iil8kvo82vev" path="res://vmarket_game/PSLCD3310.ttf" id="6_d6qxc"]
 
 [node name="Shipping_address" type="Control" unique_id=1622568055]
 layout_mode = 3
@@ -23,11 +25,13 @@ metadata/_edit_lock_ = true
 position = Vector2(1067, 587)
 scale = Vector2(3.2076938, 1.7202064)
 texture = ExtResource("2_7j2jn")
+metadata/_edit_lock_ = true
 
 [node name="Pokecut1768163041145" type="Sprite2D" parent="." unique_id=1135568359]
 position = Vector2(997, 516)
 scale = Vector2(1.4663723, 1.3948864)
 texture = ExtResource("2_qw60h")
+metadata/_edit_lock_ = true
 
 [node name="Pokecut1770020736309" type="Sprite2D" parent="." unique_id=1567289377]
 position = Vector2(1691, 164)
@@ -36,37 +40,105 @@ texture = ExtResource("4_7j2jn")
 
 [node name="Image" type="TextureRect" parent="." unique_id=935924721]
 layout_mode = 0
-offset_left = 333.0
-offset_top = 121.0
-offset_right = 737.0
-offset_bottom = 481.0
+offset_left = 268.0
+offset_top = 118.0
+offset_right = 768.0
+offset_bottom = 555.0
+texture = ExtResource("5_lewu3")
 
 [node name="DetailImage" type="TextureRect" parent="." unique_id=2103353939]
 layout_mode = 0
-offset_left = 922.0
-offset_top = 561.0
-offset_right = 1240.0
-offset_bottom = 890.0
+offset_left = 279.0
+offset_top = 582.0
+offset_right = 428.0
+offset_bottom = 722.0
+texture = ExtResource("5_lewu3")
 
 [node name="NameLabel" type="Label" parent="." unique_id=670584300]
 layout_mode = 0
-offset_left = 327.0
-offset_top = 523.0
-offset_right = 903.0
-offset_bottom = 840.0
-theme_override_font_sizes/font_size = 50
+offset_left = 776.0
+offset_top = 3.0
+offset_right = 1371.0
+offset_bottom = 420.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_d6qxc")
+theme_override_font_sizes/font_size = 100
 text = "ชื่อ"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="PriceLabel" type="Label" parent="." unique_id=919240963]
 layout_mode = 0
-offset_left = 687.0
-offset_top = 690.0
-offset_right = 914.0
-offset_bottom = 894.0
+offset_left = 776.0
+offset_top = 510.0
+offset_right = 1371.0
+offset_bottom = 927.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_d6qxc")
+theme_override_font_sizes/font_size = 100
+text = "ราคา"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="DescLabel" type="Label" parent="." unique_id=1874967632]
 layout_mode = 0
-offset_left = 1226.0
-offset_top = 359.0
-offset_right = 1461.0
-offset_bottom = 557.0
+offset_left = 776.0
+offset_top = 279.0
+offset_right = 1371.0
+offset_bottom = 696.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_d6qxc")
+theme_override_font_sizes/font_size = 100
+text = "รายละเอียด"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CartListLabel" type="Label" parent="." unique_id=1847973936]
+layout_mode = 0
+offset_left = 734.0
+offset_top = 788.0
+offset_right = 956.0
+offset_bottom = 967.0
+
+[node name="TotalLabel" type="Label" parent="." unique_id=812943472]
+layout_mode = 0
+offset_left = 1393.0
+offset_top = 739.0
+offset_right = 1682.0
+offset_bottom = 886.0
+
+[node name="AddButton" type="Button" parent="." unique_id=1066291430]
+layout_mode = 0
+offset_left = 1517.0
+offset_top = 786.0
+offset_right = 1699.0
+offset_bottom = 913.0
+text = "ซื้อเข้าตะกร้า"
+
+[node name="MinusButton" type="Button" parent="." unique_id=196844571]
+layout_mode = 0
+offset_left = 529.0
+offset_top = 850.0
+offset_right = 599.0
+offset_bottom = 897.0
+text = "-"
+
+[node name="QtyLabel" type="Label" parent="." unique_id=1716603636]
+layout_mode = 0
+offset_left = 397.0
+offset_top = 812.0
+offset_right = 510.0
+offset_bottom = 910.0
+text = "1"
+
+[node name="PlusButton" type="Button" parent="." unique_id=1589342543]
+layout_mode = 0
+offset_left = 316.0
+offset_top = 838.0
+offset_right = 371.0
+offset_bottom = 901.0
+text = "+"
+
+[connection signal="pressed" from="AddButton" to="." method="_on_add_button_pressed"]
+[connection signal="pressed" from="MinusButton" to="." method="_on_minus_button_pressed"]
+[connection signal="pressed" from="PlusButton" to="." method="_on_plus_button_pressed"]

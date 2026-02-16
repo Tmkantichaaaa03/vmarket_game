@@ -63,14 +63,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 
-[node name="TotalLabel" type="Label" parent="Panel" unique_id=1420661287]
-layout_mode = 0
-offset_left = 1441.0
-offset_top = 869.0
-offset_right = 1728.0
-offset_bottom = 1060.0
-text = "Total: 0"
-
 [node name="โต๊ะ" type="Sprite2D" parent="." unique_id=381541266]
 position = Vector2(969.0001, 595.625)
 scale = Vector2(1.7890624, 1.3952638)
@@ -83,10 +75,10 @@ texture = ExtResource("12_yy2by")
 
 [node name="Button" type="Button" parent="." unique_id=1889464301]
 layout_mode = 0
-offset_left = 1663.0
-offset_top = 913.0
-offset_right = 1770.0
-offset_bottom = 988.0
+offset_left = 1592.0
+offset_top = 604.0
+offset_right = 1699.0
+offset_bottom = 679.0
 
 [node name="ItemLayer" type="Node2D" parent="." unique_id=1535876116]
 
@@ -212,6 +204,60 @@ stretch_mode = 0
 
 [node name="HTTPRequest" type="HTTPRequest" parent="." unique_id=1830476747]
 
+[node name="BillLabel" type="Label" parent="." unique_id=1322374276]
+layout_mode = 0
+offset_left = -1006.0
+offset_top = 793.0
+offset_right = -843.0
+offset_bottom = 921.0
+text = "สินค้าทั้งหมด"
+
+[node name="TotalLabel" type="Label" parent="." unique_id=1956522402]
+layout_mode = 0
+offset_left = 1146.0
+offset_top = 778.0
+offset_right = 1287.0
+offset_bottom = 908.0
+text = "ราคารวม:"
+
+[node name="ClearButton" type="Button" parent="." unique_id=462008842]
+layout_mode = 0
+offset_left = 386.0
+offset_top = 801.0
+offset_right = 454.0
+offset_bottom = 857.0
+text = "เครีย"
+
+[node name="BackButton" type="Button" parent="." unique_id=794681846]
+layout_mode = 0
+offset_left = 1448.0
+offset_top = 772.0
+offset_right = 1548.0
+offset_bottom = 840.0
+text = "กลับเข้าสินค้าเดิม"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=27387439]
+layout_mode = 0
+offset_left = 294.0
+offset_top = 888.0
+offset_right = 750.0
+offset_bottom = 1064.0
+
+[node name="ItemListBox" type="VBoxContainer" parent="ScrollContainer" unique_id=382059212]
+layout_mode = 2
+alignment = 1
+
+[node name="BuyButton" type="Button" parent="." unique_id=1955948068]
+layout_mode = 0
+offset_left = 1436.0
+offset_top = 892.0
+offset_right = 1597.0
+offset_bottom = 987.0
+text = "ซื้อสินค้า"
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="ItemLayer/TextureButton" to="." method="_on_item_pressed"]
 [connection signal="request_completed" from="HTTPRequest" to="." method="_on_http_request_request_completed"]
+[connection signal="pressed" from="ClearButton" to="." method="_on_clear_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="BuyButton" to="." method="_on_buy_button_pressed"]
