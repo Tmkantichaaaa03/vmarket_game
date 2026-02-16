@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bqb5nni0mfh37" path="res://vmarket_game/map/ของตกแต่ง/Pokecut_1769890863907.png" id="2_qugby"]
 [ext_resource type="Texture2D" uid="uid://blh7y2xjxn1ac" path="res://vmarket_game/`อาหาร/อาหาร/โต๊ะ.png" id="6_ciwbw"]
 [ext_resource type="Texture2D" uid="uid://bawqrqgqj71e" path="res://vmarket_game/ย้อน2.png" id="7_0fp00"]
+[ext_resource type="Texture2D" uid="uid://djs5l2gb2iu25" path="res://vmarket_game/`อาหาร/อาหาร/ป้าย.png" id="8_0n0py"]
 [ext_resource type="Texture2D" uid="uid://cvmailh15yt3" path="res://vmarket_game/`อาหาร/อาหาร/จาน.png" id="8_qugby"]
 [ext_resource type="Texture2D" uid="uid://8dxiv3ak2pt" path="res://vmarket_game/image/ขวา.png" id="9_0fp00"]
 [ext_resource type="Texture2D" uid="uid://djn2atj6gbhs2" path="res://vmarket_game/map/UI/Pokecut_1770019084345.png" id="12_cjkqt"]
@@ -16,8 +17,10 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 95.0
-offset_bottom = 34.0
+offset_left = 3.0
+offset_top = -41.750015
+offset_right = 98.0
+offset_bottom = -7.75
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_cjkqt")
@@ -27,24 +30,27 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.192
 anchor_bottom = 1.1910001
-offset_right = -352.88013
-offset_bottom = -249.77417
+offset_left = -39.0
+offset_top = 21.0
+offset_right = -391.88013
+offset_bottom = -228.77417
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_lock_ = true
 
 [node name="GeminiGeneratedImage6Bsbq26Bsbq26Bsb" type="Sprite2D" parent="Panel" unique_id=936643813]
-position = Vector2(965, 469.00003)
+position = Vector2(998, 506.99997)
 scale = Vector2(2.044922, 1.1254883)
 texture = ExtResource("1_0n0py")
 metadata/_edit_lock_ = true
 
 [node name="Pokecut1769890863907" type="Sprite2D" parent="Panel" unique_id=2092574922]
-position = Vector2(989, 254.99998)
+position = Vector2(992.00006, 246.75)
 scale = Vector2(0.40405282, 0.361084)
 texture = ExtResource("2_qugby")
 
 [node name="Pokecut1770019084345" type="Sprite2D" parent="Panel" unique_id=841021645]
-position = Vector2(668, 224)
+position = Vector2(700.00006, 189.75002)
 scale = Vector2(0.50146484, 0.36767575)
 texture = ExtResource("12_cjkqt")
 
@@ -86,6 +92,11 @@ offset_bottom = 70.0
 mouse_filter = 2
 texture = ExtResource("7_0fp00")
 expand_mode = 1
+
+[node name="ป้าย" type="Sprite2D" parent="Button" unique_id=1059140685]
+position = Vector2(-675.00006, 360.75003)
+scale = Vector2(1.3188475, 0.5117187)
+texture = ExtResource("8_0n0py")
 
 [node name="ItemLayer" type="Node2D" parent="." unique_id=1535876116]
 
@@ -221,11 +232,15 @@ text = "สินค้าทั้งหมด"
 
 [node name="TotalLabel" type="Label" parent="." unique_id=1956522402]
 layout_mode = 0
-offset_left = 1283.0
-offset_top = 923.0
-offset_right = 1424.0
-offset_bottom = 1053.0
+offset_left = 962.0
+offset_top = 943.75
+offset_right = 1337.0
+offset_bottom = 1073.75
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("13_yy2by")
+theme_override_font_sizes/font_size = 40
 text = "ราคารวม:"
+horizontal_alignment = 1
 
 [node name="ClearButton" type="Button" parent="." unique_id=462008842]
 layout_mode = 0
@@ -247,12 +262,13 @@ text = "กลับเข้าสินค้าเดิม"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=27387439]
 layout_mode = 0
-offset_left = 301.0
-offset_top = 870.0
-offset_right = 757.0
-offset_bottom = 1046.0
+offset_left = 372.0
+offset_top = 914.75
+offset_right = 828.0
+offset_bottom = 1072.75
 
 [node name="ItemListBox" type="VBoxContainer" parent="ScrollContainer" unique_id=382059212]
+custom_minimum_size = Vector2(600, 120)
 layout_mode = 2
 alignment = 1
 
@@ -292,10 +308,10 @@ offset_bottom = 40.0
 
 [node name="TextureButton" type="TextureButton" parent="." unique_id=475151489]
 layout_mode = 0
-offset_left = 99.0
-offset_top = 661.0
-offset_right = 366.0
-offset_bottom = 945.0
+offset_left = 89.0
+offset_top = 685.0
+offset_right = 356.0
+offset_bottom = 969.0
 scale = Vector2(0.8, 0.8)
 texture_normal = ExtResource("12_yy2by")
 

@@ -1,148 +1,316 @@
 [gd_scene format=3 uid="uid://dn0lavgsu4y3s"]
 
-[ext_resource type="Script" uid="uid://bbgkbefts7j2p" path="res://vmarket_game/login_menu.gd" id="1_dy1s0"]
-[ext_resource type="Texture2D" uid="uid://cwhs2n8rww8w0" path="res://vmarket_game/image/พื้นหลังหน้าแรกมืด.png" id="2_dy1s0"]
-[ext_resource type="Texture2D" uid="uid://cbfqohwc4vtol" path="res://vmarket_game/image/logo1.png" id="2_wjs6x"]
+[ext_resource type="Script" uid="uid://chnhldvtxcq5h" path="res://vmarket_game/trade_ui.gd" id="1_m7n2y"]
+[ext_resource type="Texture2D" uid="uid://dus1dus681mxo" path="res://vmarket_game/map/ของตกแต่ง/Gemini_Generated_Image_6bsbq26bsbq26bsb.png" id="2_7eett"]
 [ext_resource type="FontFile" uid="uid://iil8kvo82vev" path="res://vmarket_game/PSLCD3310.ttf" id="3_01ie6"]
-[ext_resource type="Texture2D" uid="uid://dhpch23cwo5ou" path="res://vmarket_game/image/กรอบข้อความ.png" id="4_mbryh"]
-[ext_resource type="Texture2D" uid="uid://duybccx1iv1t8" path="res://vmarket_game/image/ยืนยัน.png" id="5_2ndkr"]
-[ext_resource type="Texture2D" uid="uid://xdirnjdopqhw" path="res://vmarket_game/image/ยืนยัน2.png" id="6_dy1s0"]
+[ext_resource type="Texture2D" uid="uid://bqb5nni0mfh37" path="res://vmarket_game/map/ของตกแต่ง/Pokecut_1769890863907.png" id="3_64ptl"]
+[ext_resource type="Texture2D" uid="uid://djn2atj6gbhs2" path="res://vmarket_game/map/UI/Pokecut_1770019084345.png" id="4_c2a7i"]
+[ext_resource type="Texture2D" uid="uid://blh7y2xjxn1ac" path="res://vmarket_game/`อาหาร/อาหาร/โต๊ะ.png" id="6_8i8wb"]
+[ext_resource type="Texture2D" uid="uid://bawqrqgqj71e" path="res://vmarket_game/ย้อน2.png" id="7_taae3"]
+[ext_resource type="Texture2D" uid="uid://djs5l2gb2iu25" path="res://vmarket_game/`อาหาร/อาหาร/ป้าย.png" id="8_kcbs2"]
+[ext_resource type="Texture2D" uid="uid://cvmailh15yt3" path="res://vmarket_game/`อาหาร/อาหาร/จาน.png" id="9_84cdw"]
+[ext_resource type="Texture2D" uid="uid://8dxiv3ak2pt" path="res://vmarket_game/image/ขวา.png" id="10_g0gxv"]
+[ext_resource type="Texture2D" uid="uid://myxriiawft55" path="res://vmarket_game/image/ซ้าย.png" id="11_elsic"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_01ie6"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4kcbn"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2ndkr"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dy1s0"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l8ugl"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7eett"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m7n2y"]
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qd2sl"]
-
-[node name="LoginMenu" type="Control" unique_id=1820632554]
+[node name="TradeUI" type="Control" unique_id=1823761003]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 95.0
+offset_bottom = 34.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_dy1s0")
-metadata/_edit_lock_ = true
+script = ExtResource("1_m7n2y")
 
-[node name="Background" type="TextureRect" parent="." unique_id=1778915167]
+[node name="Panel" type="Panel" parent="." unique_id=1103023582]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = 40.0
-offset_bottom = -3.0
+anchors_preset = -1
+anchor_right = 1.192
+anchor_bottom = 1.1910001
+offset_left = -64.0
+offset_top = 21.0
+offset_right = -391.88013
+offset_bottom = -162.77417
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_dy1s0")
+
+[node name="GeminiGeneratedImage6Bsbq26Bsbq26Bsb" type="Sprite2D" parent="Panel" unique_id=936643813]
+position = Vector2(998, 506.99997)
+scale = Vector2(2.044922, 1.1254883)
+texture = ExtResource("2_7eett")
+
+[node name="Pokecut1769890863907" type="Sprite2D" parent="Panel" unique_id=2092574922]
+position = Vector2(989.00006, 231.99998)
+scale = Vector2(0.40405282, 0.361084)
+texture = ExtResource("3_64ptl")
+
+[node name="Pokecut1770019084345" type="Sprite2D" parent="Panel" unique_id=841021645]
+position = Vector2(701, 139)
+scale = Vector2(0.50146484, 0.36767575)
+texture = ExtResource("4_c2a7i")
+
+[node name="label" type="Label" parent="Panel/Pokecut1770019084345" unique_id=800877107]
+modulate = Color(0.12591085, 0.12591085, 0.12591082, 1)
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -357.87225
+offset_top = -698.02325
+offset_right = 226.12775
+offset_bottom = -385.02325
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_01ie6")
+theme_override_font_sizes/font_size = 80
+text = "\"\""
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="โต๊ะ" type="Sprite2D" parent="." unique_id=381541266]
+position = Vector2(978, 598.00006)
+scale = Vector2(1.805664, 1.4284669)
+texture = ExtResource("6_8i8wb")
+
+[node name="ป้าย" type="Sprite2D" parent="." unique_id=1059140685]
+position = Vector2(957, 971)
+scale = Vector2(1.3188475, 0.46215823)
+texture = ExtResource("8_kcbs2")
+
+[node name="Button" type="Button" parent="." unique_id=1889464301]
+layout_mode = 0
+offset_left = 1628.0
+offset_top = 598.0
+offset_right = 1667.0
+offset_bottom = 639.0
+
+[node name="TextureRect" type="TextureRect" parent="Button" unique_id=2014841253]
+layout_mode = 0
+offset_left = -12.0
+offset_top = -39.0
+offset_right = 87.0
+offset_bottom = 70.0
+mouse_filter = 2
+texture = ExtResource("7_taae3")
 expand_mode = 1
 
-[node name="logo" type="TextureRect" parent="." unique_id=21168830]
-layout_mode = 0
-offset_left = 664.0
-offset_top = -72.0
-offset_right = 1376.0
-offset_bottom = 352.0
-texture = ExtResource("2_wjs6x")
-expand_mode = 1
+[node name="ItemLayer" type="Node2D" parent="." unique_id=1535876116]
+position = Vector2(0, -9)
 
-[node name="username" type="TextureRect" parent="." unique_id=2036203708]
-layout_mode = 0
-offset_left = 729.0
-offset_top = 400.0
-offset_right = 1297.0
-offset_bottom = 480.0
-texture = ExtResource("4_mbryh")
-expand_mode = 2
+[node name="Slot1" type="Node2D" parent="ItemLayer" unique_id=2035275627]
+position = Vector2(694, 511)
 
-[node name="LineEdit" type="LineEdit" parent="username" unique_id=2034625639]
-layout_mode = 0
-offset_left = 63.0
-offset_top = 4.0
-offset_right = 503.0
-offset_bottom = 60.0
-theme_override_fonts/font = ExtResource("3_01ie6")
-theme_override_font_sizes/font_size = 32
-theme_override_styles/normal = SubResource("StyleBoxEmpty_01ie6")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_4kcbn")
-placeholder_text = "ชื่อผู้ใช้"
-alignment = 1
+[node name="NameLabel" type="Label" parent="ItemLayer/Slot1" unique_id=909639878]
+offset_left = 54.0
+offset_top = 65.0
+offset_right = 94.0
+offset_bottom = 88.0
 
-[node name="loginlabel" type="Label" parent="." unique_id=846752713]
-layout_mode = 0
-offset_left = 886.0
-offset_top = 248.0
-offset_right = 1154.0
-offset_bottom = 345.0
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.3764706)
-theme_override_constants/paragraph_spacing = 0
-theme_override_constants/shadow_offset_x = 4
-theme_override_constants/outline_size = 10
-theme_override_constants/shadow_outline_size = 20
-theme_override_fonts/font = ExtResource("3_01ie6")
-theme_override_font_sizes/font_size = 67
-text = "เข้าสู่ระบบ"
+[node name="PriceLabel" type="Label" parent="ItemLayer/Slot1" unique_id=214616685]
+offset_left = -69.0
+offset_top = 85.0
+offset_right = -29.0
+offset_bottom = 108.0
 
-[node name="AcceptBotton" type="TextureButton" parent="." unique_id=2067791384]
-layout_mode = 0
-offset_left = 856.0
-offset_top = 728.0
-offset_right = 1176.0
-offset_bottom = 800.0
-texture_normal = ExtResource("5_2ndkr")
-texture_hover = ExtResource("6_dy1s0")
+[node name="Slot2" type="Node2D" parent="ItemLayer" unique_id=1518723348]
+position = Vector2(962, 511)
+
+[node name="NameLabel" type="Label" parent="ItemLayer/Slot2" unique_id=887236996]
+offset_left = 112.0
+offset_top = 134.0
+offset_right = 152.0
+offset_bottom = 157.0
+
+[node name="PriceLabel" type="Label" parent="ItemLayer/Slot2" unique_id=1063619349]
+offset_left = -65.0
+offset_top = 71.0
+offset_right = -25.0
+offset_bottom = 94.0
+
+[node name="Slot3" type="Node2D" parent="ItemLayer" unique_id=276226315]
+position = Vector2(1209, 511)
+
+[node name="NameLabel" type="Label" parent="ItemLayer/Slot3" unique_id=103986890]
+offset_left = 74.0
+offset_top = 104.0
+offset_right = 114.0
+offset_bottom = 127.0
+
+[node name="PriceLabel" type="Label" parent="ItemLayer/Slot3" unique_id=476750365]
+offset_left = -62.0
+offset_top = 101.0
+offset_right = -22.0
+offset_bottom = 124.0
+
+[node name="Slot4" type="Node2D" parent="ItemLayer" unique_id=865143945]
+position = Vector2(1466, 511)
+
+[node name="NameLabel" type="Label" parent="ItemLayer/Slot4" unique_id=3042672]
+offset_left = 61.0
+offset_top = 85.0
+offset_right = 101.0
+offset_bottom = 108.0
+
+[node name="PriceLabel" type="Label" parent="ItemLayer/Slot4" unique_id=309661220]
+offset_left = -79.0
+offset_top = 86.0
+offset_right = -39.0
+offset_bottom = 109.0
+
+[node name="Slot0" type="Node2D" parent="ItemLayer" unique_id=1455796703]
+position = Vector2(430, 512)
+
+[node name="NameLabel" type="Label" parent="ItemLayer/Slot0" unique_id=807978934]
+offset_left = 52.0
+offset_top = 78.0
+offset_right = 92.0
+offset_bottom = 101.0
+
+[node name="PriceLabel" type="Label" parent="ItemLayer/Slot0" unique_id=420549169]
+offset_left = -97.0
+offset_top = 86.0
+offset_right = -57.0
+offset_bottom = 109.0
+
+[node name="TextureButton" type="TextureButton" parent="ItemLayer" unique_id=87556150]
+offset_left = 284.0
+offset_top = 361.0
+offset_right = 584.0
+offset_bottom = 661.0
+texture_normal = ExtResource("9_84cdw")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="password" type="TextureRect" parent="." unique_id=328612774]
-layout_mode = 0
-offset_left = 728.0
-offset_top = 552.0
-offset_right = 1296.0
-offset_bottom = 624.0
-texture = ExtResource("4_mbryh")
-expand_mode = 2
+[node name="TextureButton2" type="TextureButton" parent="ItemLayer" unique_id=1398613576]
+offset_left = 546.0
+offset_top = 360.0
+offset_right = 846.0
+offset_bottom = 660.0
+texture_normal = ExtResource("9_84cdw")
+ignore_texture_size = true
+stretch_mode = 0
 
-[node name="LineEdit2" type="LineEdit" parent="password" unique_id=1512691600]
+[node name="TextureButton3" type="TextureButton" parent="ItemLayer" unique_id=610340230]
+offset_left = 814.0
+offset_top = 360.0
+offset_right = 1114.0
+offset_bottom = 660.0
+texture_normal = ExtResource("9_84cdw")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton4" type="TextureButton" parent="ItemLayer" unique_id=712470013]
+offset_left = 1061.0
+offset_top = 360.0
+offset_right = 1361.0
+offset_bottom = 660.0
+texture_normal = ExtResource("9_84cdw")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="TextureButton5" type="TextureButton" parent="ItemLayer" unique_id=407989986]
+offset_left = 1314.0
+offset_top = 360.0
+offset_right = 1614.0
+offset_bottom = 660.0
+texture_normal = ExtResource("9_84cdw")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="HTTPRequest" type="HTTPRequest" parent="." unique_id=1830476747]
+
+[node name="BillLabel" type="Label" parent="." unique_id=1322374276]
 layout_mode = 0
-offset_left = 67.0
-offset_right = 507.0
-offset_bottom = 55.0
+offset_left = -1006.0
+offset_top = 793.0
+offset_right = -843.0
+offset_bottom = 921.0
+text = "สินค้าทั้งหมด"
+
+[node name="TotalLabel" type="Label" parent="." unique_id=1956522402]
+layout_mode = 0
+offset_left = 1283.0
+offset_top = 923.0
+offset_right = 1424.0
+offset_bottom = 1053.0
+text = "ราคารวม:"
+
+[node name="ClearButton" type="Button" parent="." unique_id=462008842]
+layout_mode = 0
+offset_left = 342.0
+offset_top = 760.0
+offset_right = 424.0
+offset_bottom = 823.0
+text = "Clear"
+
+[node name="BackButton" type="Button" parent="." unique_id=794681846]
+layout_mode = 0
+offset_left = 1413.0
+offset_top = 788.0
+offset_right = 1572.0
+offset_bottom = 856.0
 theme_override_fonts/font = ExtResource("3_01ie6")
-theme_override_font_sizes/font_size = 32
-theme_override_styles/normal = SubResource("StyleBoxEmpty_2ndkr")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_dy1s0")
-placeholder_text = "รหัสผ่าน"
+theme_override_font_sizes/font_size = 23
+text = "กลับเข้าสินค้าเดิม"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=27387439]
+layout_mode = 0
+offset_left = 409.0
+offset_top = 905.0
+offset_right = 865.0
+offset_bottom = 1060.0
+
+[node name="ItemListBox" type="VBoxContainer" parent="ScrollContainer" unique_id=382059212]
+layout_mode = 2
 alignment = 1
-secret = true
 
-[node name="HTTPRequest" type="HTTPRequest" parent="." unique_id=2058315607]
-
-[node name="RegisterButton" type="Button" parent="." unique_id=1963734487]
+[node name="BuyButton" type="Button" parent="." unique_id=1955948068]
 layout_mode = 0
-offset_left = 904.0
-offset_top = 832.0
-offset_right = 1140.0
-offset_bottom = 870.0
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_01ie6")
-theme_override_font_sizes/font_size = 22
-theme_override_styles/normal = SubResource("StyleBoxEmpty_l8ugl")
-theme_override_styles/pressed = SubResource("StyleBoxEmpty_7eett")
-theme_override_styles/hover = SubResource("StyleBoxEmpty_m7n2y")
-theme_override_styles/focus = SubResource("StyleBoxEmpty_qd2sl")
-text = "ยังไม่มีบัญชี ?  สมัครสมาชิก"
+offset_left = 1665.0
+offset_top = 766.0
+offset_right = 1895.0
+offset_bottom = 950.0
+scale = Vector2(0.5, 0.5)
+text = "ซื้อสินค้า"
+expand_icon = true
 
-[connection signal="pressed" from="AcceptBotton" to="." method="_on_accept_botton_pressed"]
-[connection signal="request_completed" from="HTTPRequest" to="." method="_on_http_request_completed"]
-[connection signal="pressed" from="RegisterButton" to="." method="_on_register_button_pressed"]
+[node name="TextureRect" type="TextureRect" parent="BuyButton" unique_id=2144917783]
+layout_mode = 0
+offset_left = -90.0
+offset_top = -110.0
+offset_right = 352.0
+offset_bottom = 324.0
+mouse_filter = 2
+texture = ExtResource("10_g0gxv")
+
+[node name="Label" type="Label" parent="BuyButton" unique_id=2102820588]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 6.0
+offset_right = 340.0
+offset_bottom = 168.0
+theme_override_fonts/font = ExtResource("3_01ie6")
+theme_override_font_sizes/font_size = 50
+text = "ชำระเงิน"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2130306359]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=475151489]
+layout_mode = 0
+offset_left = 89.0
+offset_top = 685.0
+offset_right = 356.0
+offset_bottom = 969.0
+scale = Vector2(0.8, 0.8)
+texture_normal = ExtResource("11_elsic")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="ItemLayer/TextureButton" to="." method="_on_item_pressed"]
+[connection signal="request_completed" from="HTTPRequest" to="." method="_on_http_request_request_completed"]
+[connection signal="pressed" from="ClearButton" to="." method="_on_clear_button_pressed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="BuyButton" to="." method="_on_buy_button_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
