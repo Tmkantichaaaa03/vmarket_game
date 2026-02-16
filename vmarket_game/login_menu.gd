@@ -39,6 +39,7 @@ func _on_http_request_completed(_result, response_code, _headers, body):
 		Global.current_username = user_data.get("username")
 		Global.selected_avatar_index = int(user_data.get("avatar_id"))
 		
-		get_tree().change_scene_to_file("res://vmarket_game/world.tscn")
+		# แก้ไขจุดนี้เป็นหน้าหลักที่คุณต้องการ
+		get_tree().change_scene_to_file("res://vmarket_game/startworld.tscn")
 	else:
 		print("Login Failed")
