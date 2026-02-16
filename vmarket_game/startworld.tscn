@@ -48009,6 +48009,16 @@ position = Vector2(-108.99999, 452)
 scale = Vector2(0.11328122, 0.101562515)
 texture = ExtResource("11_8w7oh")
 
+[node name="Sprite2D4" type="Sprite2D" parent="." unique_id=2093976622]
+position = Vector2(-1216, 446)
+scale = Vector2(0.113, 0.113)
+texture = ExtResource("11_8w7oh")
+
+[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=680950594]
+position = Vector2(-861, 449)
+scale = Vector2(0.113, 0.113)
+texture = ExtResource("11_8w7oh")
+
 [node name="ร้านค้า2" type="TileMapLayer" parent="." unique_id=544049254]
 position = Vector2(70, -114.99999)
 scale = Vector2(0.7956057, 0.848691)
@@ -48017,7 +48027,7 @@ tile_set = SubResource("TileSet_7ohpx")
 
 [node name="ShopTrigger" type="Area2D" parent="ร้านค้า2" unique_id=1327230564]
 script = ExtResource("16_ptbtb")
-shop_id = 1
+shop_id = 11
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ร้านค้า2/ShopTrigger" unique_id=855195613]
 position = Vector2(-1600.0388, 727.0019)
@@ -48033,6 +48043,7 @@ text = "กด E เพื่อเข้า"
 
 [node name="shopID2" type="Area2D" parent="ร้านค้า2" unique_id=1859184632]
 script = ExtResource("17_uvxm4")
+shop_id = 12
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ร้านค้า2/shopID2" unique_id=1100891841]
 position = Vector2(-1161.3792, 730.53674)
@@ -48041,7 +48052,7 @@ shape = SubResource("RectangleShape2D_5oyx0")
 
 [node name="ShopTrigger2" type="Area2D" parent="ร้านค้า2" unique_id=1923804035]
 script = ExtResource("16_ptbtb")
-shop_id = 3
+shop_id = 13
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ร้านค้า2/ShopTrigger2" unique_id=769701152]
 position = Vector2(-676.2146, 723.4671)
@@ -48057,7 +48068,7 @@ text = "กด E เพื่อเข้า"
 
 [node name="ShopTrigger3" type="Area2D" parent="ร้านค้า2" unique_id=355578529]
 script = ExtResource("16_ptbtb")
-shop_id = 4
+shop_id = 14
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ร้านค้า2/ShopTrigger3" unique_id=419968391]
 position = Vector2(1444.1827, 1274.9045)
@@ -48073,7 +48084,7 @@ text = "กด E เพื่อเข้า"
 
 [node name="ShopTrigger4" type="Area2D" parent="ร้านค้า2" unique_id=326225255]
 script = ExtResource("16_ptbtb")
-shop_id = 5
+shop_id = 15
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ร้านค้า2/ShopTrigger4" unique_id=403656022]
 position = Vector2(-214.93054, 723.4669)
@@ -48089,7 +48100,7 @@ text = "กด E เพื่อเข้า"
 
 [node name="ShopTrigger5" type="Area2D" parent="ร้านค้า2" unique_id=160652602]
 script = ExtResource("16_ptbtb")
-shop_id = 6
+shop_id = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ร้านค้า2/ShopTrigger5" unique_id=234202963]
 position = Vector2(940.1642, 727.0022)
@@ -48105,7 +48116,7 @@ text = "กด E เพื่อเข้า"
 
 [node name="ShopTrigger6" type="Area2D" parent="ร้านค้า2" unique_id=2124524216]
 script = ExtResource("16_ptbtb")
-shop_id = 7
+shop_id = 17
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ร้านค้า2/ShopTrigger6" unique_id=547907905]
 position = Vector2(1421.5583, 719.9321)
@@ -48121,7 +48132,7 @@ text = "กด E เพื่อเข้า"
 
 [node name="ShopTrigger7" type="Area2D" parent="ร้านค้า2" unique_id=1461157768]
 script = ExtResource("16_ptbtb")
-shop_id = 8
+shop_id = 18
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ร้านค้า2/ShopTrigger7" unique_id=463098626]
 position = Vector2(1926.8337, 715.2191)
@@ -48137,7 +48148,7 @@ text = "กด E เพื่อเข้า"
 
 [node name="ShopTrigger8" type="Area2D" parent="ร้านค้า2" unique_id=1712569265]
 script = ExtResource("16_ptbtb")
-shop_id = 9
+shop_id = 19
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ร้านค้า2/ShopTrigger8" unique_id=95833639]
 position = Vector2(2415.7695, 716.39746)
