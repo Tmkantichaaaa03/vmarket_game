@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://myxriiawft55" path="res://vmarket_game/image/ซ้าย.png" id="12_yy2by"]
 [ext_resource type="FontFile" uid="uid://iil8kvo82vev" path="res://vmarket_game/PSLCD3310.ttf" id="13_yy2by"]
 
-[node name="TradeUI" type="Control" unique_id=1823761003]
+[node name="TradeUI2" type="Control" unique_id=1823761003]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -352,10 +352,10 @@ texture = ExtResource("9_0fp00")
 
 [node name="Label" type="Label" parent="BuyButton" unique_id=2102820588]
 layout_mode = 0
-offset_left = 54.0
-offset_top = 6.0
-offset_right = 340.0
-offset_bottom = 168.0
+offset_left = 36.0
+offset_top = 23.5
+offset_right = 322.0
+offset_bottom = 185.5
 theme_override_fonts/font = ExtResource("13_yy2by")
 theme_override_font_sizes/font_size = 50
 text = "ชำระเงิน"
