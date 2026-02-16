@@ -774,9 +774,9 @@ script = ExtResource("1_4x6r1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1356682805]
 position = Vector2(-9.3749695, 50.249985)
-scale = Vector2(4.2968764, 3.1406245)
+scale = Vector2(4.5, 3.29)
 sprite_frames = SubResource("SpriteFrames_76k8f")
-animation = &"Bob_walk_side"
+animation = &"Alex"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=159831357]
 position = Vector2(-10, 62)

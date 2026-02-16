@@ -4,7 +4,9 @@
 [ext_resource type="Script" uid="uid://chnhldvtxcq5h" path="res://vmarket_game/trade_ui.gd" id="1_cjkqt"]
 [ext_resource type="Texture2D" uid="uid://bqb5nni0mfh37" path="res://vmarket_game/map/ของตกแต่ง/Pokecut_1769890863907.png" id="2_qugby"]
 [ext_resource type="Texture2D" uid="uid://blh7y2xjxn1ac" path="res://vmarket_game/`อาหาร/อาหาร/โต๊ะ.png" id="6_ciwbw"]
+[ext_resource type="Texture2D" uid="uid://bawqrqgqj71e" path="res://vmarket_game/ย้อน2.png" id="7_0fp00"]
 [ext_resource type="Texture2D" uid="uid://cvmailh15yt3" path="res://vmarket_game/`อาหาร/อาหาร/จาน.png" id="8_qugby"]
+[ext_resource type="Texture2D" uid="uid://8dxiv3ak2pt" path="res://vmarket_game/image/ขวา.png" id="9_0fp00"]
 [ext_resource type="Texture2D" uid="uid://djn2atj6gbhs2" path="res://vmarket_game/map/UI/Pokecut_1770019084345.png" id="12_cjkqt"]
 [ext_resource type="Texture2D" uid="uid://myxriiawft55" path="res://vmarket_game/image/ซ้าย.png" id="12_yy2by"]
 [ext_resource type="FontFile" uid="uid://iil8kvo82vev" path="res://vmarket_game/PSLCD3310.ttf" id="13_yy2by"]
@@ -64,21 +66,26 @@ vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="โต๊ะ" type="Sprite2D" parent="." unique_id=381541266]
-position = Vector2(969.0001, 595.625)
-scale = Vector2(1.7890624, 1.3952638)
+position = Vector2(977.5001, 612.625)
+scale = Vector2(1.805664, 1.4284669)
 texture = ExtResource("6_ciwbw")
-
-[node name="ซ้าย" type="Sprite2D" parent="." unique_id=2137919036]
-position = Vector2(212.00002, 779)
-scale = Vector2(0.89419466, 0.7623242)
-texture = ExtResource("12_yy2by")
 
 [node name="Button" type="Button" parent="." unique_id=1889464301]
 layout_mode = 0
-offset_left = 1592.0
-offset_top = 604.0
-offset_right = 1699.0
-offset_bottom = 679.0
+offset_left = 1620.0
+offset_top = 629.0
+offset_right = 1659.0
+offset_bottom = 670.0
+
+[node name="TextureRect" type="TextureRect" parent="Button" unique_id=2014841253]
+layout_mode = 0
+offset_left = -12.0
+offset_top = -39.0
+offset_right = 87.0
+offset_bottom = 70.0
+mouse_filter = 2
+texture = ExtResource("7_0fp00")
+expand_mode = 1
 
 [node name="ItemLayer" type="Node2D" parent="." unique_id=1535876116]
 
@@ -214,34 +221,36 @@ text = "สินค้าทั้งหมด"
 
 [node name="TotalLabel" type="Label" parent="." unique_id=1956522402]
 layout_mode = 0
-offset_left = 1146.0
-offset_top = 778.0
-offset_right = 1287.0
-offset_bottom = 908.0
+offset_left = 1283.0
+offset_top = 923.0
+offset_right = 1424.0
+offset_bottom = 1053.0
 text = "ราคารวม:"
 
 [node name="ClearButton" type="Button" parent="." unique_id=462008842]
 layout_mode = 0
-offset_left = 386.0
-offset_top = 801.0
-offset_right = 454.0
-offset_bottom = 857.0
-text = "เครีย"
+offset_left = 342.0
+offset_top = 760.0
+offset_right = 424.0
+offset_bottom = 823.0
+text = "Clear"
 
 [node name="BackButton" type="Button" parent="." unique_id=794681846]
 layout_mode = 0
-offset_left = 1448.0
-offset_top = 772.0
-offset_right = 1548.0
-offset_bottom = 840.0
+offset_left = 1413.0
+offset_top = 788.0
+offset_right = 1572.0
+offset_bottom = 856.0
+theme_override_fonts/font = ExtResource("13_yy2by")
+theme_override_font_sizes/font_size = 23
 text = "กลับเข้าสินค้าเดิม"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=27387439]
 layout_mode = 0
-offset_left = 294.0
-offset_top = 888.0
-offset_right = 750.0
-offset_bottom = 1064.0
+offset_left = 301.0
+offset_top = 870.0
+offset_right = 757.0
+offset_bottom = 1046.0
 
 [node name="ItemListBox" type="VBoxContainer" parent="ScrollContainer" unique_id=382059212]
 layout_mode = 2
@@ -249,11 +258,46 @@ alignment = 1
 
 [node name="BuyButton" type="Button" parent="." unique_id=1955948068]
 layout_mode = 0
-offset_left = 1436.0
-offset_top = 892.0
-offset_right = 1597.0
-offset_bottom = 987.0
+offset_left = 1665.0
+offset_top = 766.0
+offset_right = 1895.0
+offset_bottom = 950.0
+scale = Vector2(0.5, 0.5)
 text = "ซื้อสินค้า"
+expand_icon = true
+
+[node name="TextureRect" type="TextureRect" parent="BuyButton" unique_id=2144917783]
+layout_mode = 0
+offset_left = -90.0
+offset_top = -110.0
+offset_right = 352.0
+offset_bottom = 324.0
+mouse_filter = 2
+texture = ExtResource("9_0fp00")
+
+[node name="Label" type="Label" parent="BuyButton" unique_id=2102820588]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 6.0
+offset_right = 340.0
+offset_bottom = 168.0
+theme_override_fonts/font = ExtResource("13_yy2by")
+theme_override_font_sizes/font_size = 50
+text = "ชำระเงิน"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2130306359]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=475151489]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 661.0
+offset_right = 366.0
+offset_bottom = 945.0
+scale = Vector2(0.8, 0.8)
+texture_normal = ExtResource("12_yy2by")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="ItemLayer/TextureButton" to="." method="_on_item_pressed"]
@@ -261,3 +305,4 @@ text = "ซื้อสินค้า"
 [connection signal="pressed" from="ClearButton" to="." method="_on_clear_button_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="BuyButton" to="." method="_on_buy_button_pressed"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

@@ -86,3 +86,4 @@ func qty_get(name):
 var user_name = "Player01"
 var shipping_address = "Bangkok 10200"
 var customer_id : int = 1
+var current_shop_id:int = 0

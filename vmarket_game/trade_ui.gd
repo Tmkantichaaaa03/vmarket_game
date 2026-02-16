@@ -59,6 +59,14 @@ func _on_http_request_request_completed(result,code,headers,body):
 
 	for product in json["data"]:
 
+		# ⭐⭐⭐ เพิ่มกรอง seller_id = 7 ⭐⭐⭐
+		if int(product["seller_id"]) != Global.current_shop_id:
+			continue
+
+		# (กันกรณีมี approval_status)
+		if product.has("approval_status") and product["approval_status"] != "approved":
+			continue
+
 		if product["image"]=="":
 			continue
 
@@ -255,15 +263,12 @@ func _on_clear_button_pressed() -> void:
 	rebuild_item_list()
 
 
-
 func _on_back_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://vmarket_game/Shipping_address.tscn")
 
 
 
-# ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
-# UI CART LIST (+/- และ ราคา)
-# ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+# ⭐⭐⭐ UI CART LIST ⭐⭐⭐
 func rebuild_item_list():
 
 	for c in item_box.get_children():
@@ -280,7 +285,6 @@ func rebuild_item_list():
 
 		grouped[name]["qty"] += 1
 
-
 	for name in grouped.keys():
 
 		var qty = grouped[name]["qty"]
@@ -291,51 +295,38 @@ func rebuild_item_list():
 		row.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		row.add_theme_constant_override("separation", 18)
 
-
-		# ===== ชื่อสินค้า =====
 		var name_lbl = Label.new()
 		name_lbl.text = name
 		name_lbl.custom_minimum_size.x = 30
 		row.add_child(name_lbl)
 
-
-		# ===== ราคาต่อชิ้น =====
 		var price_lbl = Label.new()
 		price_lbl.text = str(price) + "$"
 		price_lbl.custom_minimum_size.x = 30
 		row.add_child(price_lbl)
 
-
-		# ===== ลบ =====
 		var minus = Button.new()
 		minus.text = "-"
 		minus.custom_minimum_size = Vector2(32,28)
 		minus.pressed.connect(_on_minus.bind(name))
 		row.add_child(minus)
 
-
-		# ===== จำนวน =====
 		var qty_lbl = Label.new()
 		qty_lbl.text = str(qty)
 		qty_lbl.custom_minimum_size.x = 40
 		qty_lbl.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 		row.add_child(qty_lbl)
 
-
-		# ===== เพิ่ม =====
 		var plus = Button.new()
 		plus.text = "+"
 		plus.custom_minimum_size = Vector2(32,28)
 		plus.pressed.connect(_on_plus.bind(name))
 		row.add_child(plus)
 
-
-		# ===== = subtotal =====
 		var sub_lbl = Label.new()
 		sub_lbl.text = "= " + str(subtotal) + "$"
 		sub_lbl.custom_minimum_size.x = 40
 		row.add_child(sub_lbl)
-
 
 		item_box.add_child(row)
 
@@ -355,3 +346,13 @@ func _on_minus(name):
 
 func _on_buy_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://vmarket_game/shopConfirm.tscn")
+
+
+
+
+func _on_texture_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://vmarket_game/startworld.tscn")
+
+
+func _on_texture_button_2_pressed() -> void:
+	scroll_right()
