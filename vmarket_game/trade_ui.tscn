@@ -4,10 +4,11 @@
 [ext_resource type="Script" uid="uid://chnhldvtxcq5h" path="res://vmarket_game/trade_ui.gd" id="1_cjkqt"]
 [ext_resource type="Texture2D" uid="uid://bqb5nni0mfh37" path="res://vmarket_game/map/ของตกแต่ง/Pokecut_1769890863907.png" id="2_qugby"]
 [ext_resource type="Texture2D" uid="uid://blh7y2xjxn1ac" path="res://vmarket_game/`อาหาร/อาหาร/โต๊ะ.png" id="6_ciwbw"]
-[ext_resource type="Texture2D" uid="uid://bawqrqgqj71e" path="res://vmarket_game/ย้อน2.png" id="7_0fp00"]
 [ext_resource type="Texture2D" uid="uid://djs5l2gb2iu25" path="res://vmarket_game/`อาหาร/อาหาร/ป้าย.png" id="8_0n0py"]
+[ext_resource type="Texture2D" uid="uid://cq1ydo2vngxv4" path="res://vmarket_game/`อาหาร/อาหาร/ลูกศร.png" id="8_cjkqt"]
 [ext_resource type="Texture2D" uid="uid://cvmailh15yt3" path="res://vmarket_game/`อาหาร/อาหาร/จาน.png" id="8_qugby"]
 [ext_resource type="Texture2D" uid="uid://8dxiv3ak2pt" path="res://vmarket_game/image/ขวา.png" id="9_0fp00"]
+[ext_resource type="Texture2D" uid="uid://8hxxm3u6wner" path="res://vmarket_game/`อาหาร/อาหาร/ป้ายขาว.png" id="10_cjkqt"]
 [ext_resource type="Texture2D" uid="uid://djn2atj6gbhs2" path="res://vmarket_game/map/UI/Pokecut_1770019084345.png" id="12_cjkqt"]
 [ext_resource type="Texture2D" uid="uid://myxriiawft55" path="res://vmarket_game/image/ซ้าย.png" id="12_yy2by"]
 [ext_resource type="FontFile" uid="uid://iil8kvo82vev" path="res://vmarket_game/PSLCD3310.ttf" id="13_yy2by"]
@@ -72,31 +73,48 @@ vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="โต๊ะ" type="Sprite2D" parent="." unique_id=381541266]
-position = Vector2(977.5001, 612.625)
-scale = Vector2(1.805664, 1.4284669)
+position = Vector2(966.99994, 612.625)
+scale = Vector2(1.8261719, 1.4284669)
 texture = ExtResource("6_ciwbw")
+
+[node name="ป้าย" type="Sprite2D" parent="." unique_id=1059140685]
+position = Vector2(957.125, 997.5)
+scale = Vector2(1.328369, 0.5117187)
+texture = ExtResource("8_0n0py")
 
 [node name="Button" type="Button" parent="." unique_id=1889464301]
 layout_mode = 0
-offset_left = 1620.0
-offset_top = 629.0
-offset_right = 1659.0
-offset_bottom = 670.0
+offset_left = 1660.0
+offset_top = 636.75
+offset_right = 1696.0
+offset_bottom = 670.75
 
 [node name="TextureRect" type="TextureRect" parent="Button" unique_id=2014841253]
 layout_mode = 0
-offset_left = -12.0
-offset_top = -39.0
-offset_right = 87.0
-offset_bottom = 70.0
+offset_left = -84.0
+offset_top = -50.0
+offset_right = 71.0
+offset_bottom = 82.0
 mouse_filter = 2
-texture = ExtResource("7_0fp00")
+texture = ExtResource("8_cjkqt")
 expand_mode = 1
 
-[node name="ป้าย" type="Sprite2D" parent="Button" unique_id=1059140685]
-position = Vector2(-675.00006, 360.75003)
-scale = Vector2(1.3188475, 0.5117187)
-texture = ExtResource("8_0n0py")
+[node name="Button2" type="Button" parent="." unique_id=1357497403]
+layout_mode = 0
+offset_left = 217.0
+offset_top = 639.75
+offset_right = 252.0
+offset_bottom = 668.75
+
+[node name="TextureRect" type="TextureRect" parent="Button2" unique_id=1008752595]
+layout_mode = 0
+offset_left = -32.0
+offset_top = -50.0
+offset_right = 123.0
+offset_bottom = 82.0
+texture = ExtResource("8_cjkqt")
+expand_mode = 1
+flip_h = true
 
 [node name="ItemLayer" type="Node2D" parent="." unique_id=1535876116]
 
@@ -232,10 +250,10 @@ text = "สินค้าทั้งหมด"
 
 [node name="TotalLabel" type="Label" parent="." unique_id=1956522402]
 layout_mode = 0
-offset_left = 962.0
-offset_top = 943.75
-offset_right = 1337.0
-offset_bottom = 1073.75
+offset_left = 999.0
+offset_top = 938.75
+offset_right = 1374.0
+offset_bottom = 1068.75
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("13_yy2by")
 theme_override_font_sizes/font_size = 40
@@ -244,11 +262,32 @@ horizontal_alignment = 1
 
 [node name="ClearButton" type="Button" parent="." unique_id=462008842]
 layout_mode = 0
-offset_left = 342.0
-offset_top = 760.0
-offset_right = 424.0
-offset_bottom = 823.0
+offset_left = 218.0
+offset_top = 979.75
+offset_right = 314.0
+offset_bottom = 1054.5
 text = "Clear"
+
+[node name="TextureRect" type="TextureRect" parent="ClearButton" unique_id=1814652378]
+layout_mode = 0
+offset_left = -27.0
+offset_top = -16.25
+offset_right = 116.0
+offset_bottom = 94.75
+texture = ExtResource("10_cjkqt")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="ClearButton/TextureRect" unique_id=722566066]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 30.0
+offset_right = 99.0
+offset_bottom = 74.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("13_yy2by")
+theme_override_font_sizes/font_size = 30
+text = "Clear"
+horizontal_alignment = 1
 
 [node name="BackButton" type="Button" parent="." unique_id=794681846]
 layout_mode = 0
@@ -260,12 +299,32 @@ theme_override_fonts/font = ExtResource("13_yy2by")
 theme_override_font_sizes/font_size = 23
 text = "กลับเข้าสินค้าเดิม"
 
+[node name="TextureRect" type="TextureRect" parent="BackButton" unique_id=1729785515]
+layout_mode = 0
+offset_left = -27.0
+offset_top = -17.25
+offset_right = 175.0
+offset_bottom = 83.75
+texture = ExtResource("10_cjkqt")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="BackButton/TextureRect" unique_id=1085735010]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 34.0
+offset_right = 158.0
+offset_bottom = 69.0
+theme_override_colors/font_color = Color(0.00011382803, 0.00011382803, 0.00011382803, 1)
+theme_override_fonts/font = ExtResource("13_yy2by")
+text = "กลับเข้าสินค้าเดิม"
+horizontal_alignment = 1
+
 [node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=27387439]
 layout_mode = 0
-offset_left = 372.0
-offset_top = 914.75
-offset_right = 828.0
-offset_bottom = 1072.75
+offset_left = 422.0
+offset_top = 923.75
+offset_right = 878.0
+offset_bottom = 1081.75
 
 [node name="ItemListBox" type="VBoxContainer" parent="ScrollContainer" unique_id=382059212]
 custom_minimum_size = Vector2(600, 120)
@@ -285,9 +344,9 @@ expand_icon = true
 [node name="TextureRect" type="TextureRect" parent="BuyButton" unique_id=2144917783]
 layout_mode = 0
 offset_left = -90.0
-offset_top = -110.0
+offset_top = -160.5
 offset_right = 352.0
-offset_bottom = 324.0
+offset_bottom = 305.5
 mouse_filter = 2
 texture = ExtResource("9_0fp00")
 
@@ -316,6 +375,7 @@ scale = Vector2(0.8, 0.8)
 texture_normal = ExtResource("12_yy2by")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="ItemLayer/TextureButton" to="." method="_on_item_pressed"]
 [connection signal="request_completed" from="HTTPRequest" to="." method="_on_http_request_request_completed"]
 [connection signal="pressed" from="ClearButton" to="." method="_on_clear_button_pressed"]
